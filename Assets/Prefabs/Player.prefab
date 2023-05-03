@@ -150,7 +150,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2005164228916388527}
-  - {fileID: 2005164230805098903}
+  - {fileID: 2005164230307331648}
   - {fileID: 2005164229833543178}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -308,6 +308,7 @@ GameObject:
   - component: {fileID: 2005164230307331648}
   - component: {fileID: 2005164230307331674}
   - component: {fileID: 2005164230307331672}
+  - component: {fileID: 9020649619676380760}
   - component: {fileID: 2005164230307331675}
   - component: {fileID: 2005164230307331676}
   - component: {fileID: 2005164230307331673}
@@ -315,7 +316,7 @@ GameObject:
   - component: {fileID: 8795886496263279587}
   - component: {fileID: 2005164230307331678}
   m_Layer: 0
-  m_Name: Body
+  m_Name: Effects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -333,8 +334,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2005164230805098903}
-  m_RootOrder: 0
+  m_Father: {fileID: 2005164230133718153}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2005164230307331674
 SpriteRenderer:
@@ -377,7 +378,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3482c41c39ccaea40bd1f6abc146766c, type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: 55d14ddb6aaecfa4497607b09f2dfcbc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -414,6 +415,20 @@ MonoBehaviour:
   landSound: {fileID: 1442965535111787294, guid: c27e9a679083b6749b534a5d467f3c44, type: 3}
   respawnSound: {fileID: 1442965535111787294, guid: 143334d922acb0343857a63672b74473, type: 3}
   runSound: {fileID: 1442965535111787294, guid: 81ac5af3030615841933c92f271ddb91, type: 3}
+--- !u!114 &9020649619676380760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005164230307331651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d37fa95c789f5c545a8154a97b51ad57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveY: 0
+  rotateVel: 100
 --- !u!95 &2005164230307331675
 Animator:
   serializedVersion: 5
@@ -575,50 +590,3 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!1 &2005164230805098902
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2005164230805098903}
-  - component: {fileID: 2005164230805098900}
-  m_Layer: 0
-  m_Name: BillBoardBody
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2005164230805098903
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2005164230805098902}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2005164230307331648}
-  m_Father: {fileID: 2005164230133718153}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2005164230805098900
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2005164230805098902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d37fa95c789f5c545a8154a97b51ad57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveY: 0
-  rotateVel: 100

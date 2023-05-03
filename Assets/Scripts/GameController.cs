@@ -11,8 +11,6 @@ public class GameController : MonoBehaviour
 {
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject thirdPersonCamera;
-    public int lifes;
-    private int maxLifes;
     [SerializeField] private GameEvent respawn;
     private Vector3 spawnPoint;
 
@@ -44,7 +42,6 @@ public class GameController : MonoBehaviour
 
         hudAnimator = hud.GetComponent<Animator>();
 
-        maxLifes = lifes;
         spawnPoint = player.transform.position;
     }
 
@@ -94,16 +91,7 @@ public class GameController : MonoBehaviour
 
     public void Death()
     {
-        lifes--;
-        if (lifes <= 0)
-        {
-            PlayerPrefs.SetFloat("currentTime", -10);
-            SceneManager.LoadScene("GameOver");
-        }
-        else
-        {
-            StartCoroutine("Respawn");
-        }
+        StartCoroutine("Respawn");
     }
 
     private IEnumerator Respawn()
@@ -112,7 +100,6 @@ public class GameController : MonoBehaviour
         player.transform.position = spawnPoint;
         hudAnimator.Play("ShowStatus");
         yield return new WaitForSeconds(0.25f);
-        status.sprite = statusHP[lifes];
         respawn.Raise();
     }
 
@@ -123,10 +110,6 @@ public class GameController : MonoBehaviour
 
     public void PickedLife()
     {
-        if (lifes < maxLifes)
-        {
-            lifes++;
-        }
         StartCoroutine("ShowStatus");
     }
 
@@ -139,7 +122,6 @@ public class GameController : MonoBehaviour
     {
         hudAnimator.Play("ShowStatus");
         yield return new WaitForSeconds(0.25f);
-        status.sprite = statusHP[lifes];
     }
 
     public void Victory()
