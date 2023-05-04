@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerInput : MonoBehaviour, IInput
 {
     public GameObject camera;
+    private bool canControl = true;
+
 
     public Vector3 direction
     {
@@ -22,7 +24,14 @@ public class PlayerInput : MonoBehaviour, IInput
 
             Vector3 rotatedMove = move.x * a + move.z * b;
 
-            return rotatedMove;
+            if (canControl)
+            {
+                return rotatedMove;
+            }
+            else
+            {
+                return Vector3.zero;
+            }
         }
     }
 
@@ -30,7 +39,34 @@ public class PlayerInput : MonoBehaviour, IInput
     {
         get
         {
-            return Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0);
+            if (canControl)
+            {
+                return Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0);
+            }
+            else
+            {
+                return false;
+            }
         }
+    }
+
+    public bool dash
+    {
+        get
+        {
+            if (canControl)
+            {
+                return Input.GetKeyDown(KeyCode.N) || Input.GetMouseButtonDown(1);
+            }
+            else
+            {
+                return false;
+            }
+        }
+    }
+
+    public void SetCanControl(bool state)
+    {
+        canControl = state;
     }
 }

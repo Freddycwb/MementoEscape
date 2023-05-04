@@ -11,16 +11,21 @@ public class GameOver : MonoBehaviour
     [SerializeField] private TextMeshProUGUI time;
 
     [SerializeField] private Sprite timeOverBackground;
+    [SerializeField] private Sprite deathBackground;
 
     private void Start()
     {
+        Cursor.lockState = CursorLockMode.None;
         if (PlayerPrefs.GetFloat("currentTime") == -1)
         {
             background.sprite = timeOverBackground;
         }
+        else if (PlayerPrefs.GetFloat("currentTime") == -10)
+        {
+            background.sprite = deathBackground;
+        }
         else
         {
-            Debug.Log(PlayerPrefs.GetFloat("currentTime") - PlayerPrefs.GetFloat("gameTime"));
             float t = Mathf.Abs(PlayerPrefs.GetFloat("currentTime") - PlayerPrefs.GetFloat("gameTime"));
             time.text = (Mathf.Floor(t / 60)).ToString() + ":" + ((int)t % 60).ToString("d2"); ;
         }

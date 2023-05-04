@@ -1,45 +1,58 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerCollider : MonoBehaviour
 {
-    private Rigidbody rb;
-    private float ySpeed;
+    private Movement playerMovement;
 
-    [SerializeField] private Vector2 ResistAndDeathVelocity;
-    [SerializeField] private float hp;
-
-    public GameEvent reachFinish;
+    [SerializeField] private BoolVariable isGrounded;
+    [SerializeField] private MovingPlatformVariable movingPlatform;
+    private bool wasGrounded;
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();
-    }
-
-    private void Update()
-    {
-        ySpeed = rb.velocity.y != 0 ? rb.velocity.y : ySpeed;
+        playerMovement = GetComponent<Movement>();
+        wasGrounded = isGrounded.Value;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Exit"))
+        if (other.gameObject.CompareTag("Thrower"))
         {
-            reachFinish.Raise();
+            playerMovement.BeThrown(other.gameObject.GetComponent<Thrower>().direction, other.gameObject.GetComponent<Thrower>().force);
         }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.layer == 3)
+        if (collision.gameObject.CompareTag("Thrower"))
         {
-            float damage = 0;
-            if (ySpeed < ResistAndDeathVelocity.x)
-            {
-                damage = ySpeed;
-            }
-            Debug.Log("speed: " + ySpeed + " Damage: " + damage);
+            playerMovement.BeThrown(collision.gameObject.GetComponent<Thrower>().direction, collision.gameObject.GetComponent<Thrower>().force);
+        }
+        if (collision.gameObject.CompareTag("MovingPlatform") && !wasGrounded)
+        {
+            movingPlatform.SetPlatform(collision.gameObject);
+            movingPlatform.SetLastRotation(collision.transform.eulerAngles.y);
+            movingPlatform.SetLastPosition(collision.transform.position);
+            wasGrounded = isGrounded.Value;
+        }
+    }
+
+    private void LateUpdate()
+    {
+        if (!isGrounded.Value)
+        {
+            wasGrounded = false;
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (movingPlatform.platform == collision.gameObject)
+        {
+            movingPlatform.platform = null;
         }
     }
 }
