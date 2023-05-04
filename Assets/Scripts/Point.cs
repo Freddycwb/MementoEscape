@@ -34,9 +34,9 @@ public class Point : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             player = other.gameObject;
-            if(GetComponent<SinMovement>() != null)
+            if(GetComponent<ObjectMovement>() != null)
             {
-                GetComponent<SinMovement>().enabled = false;
+                GetComponent<ObjectMovement>().enabled = false;
             }
         }
     }

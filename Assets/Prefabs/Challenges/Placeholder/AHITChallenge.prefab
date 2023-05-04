@@ -1583,7 +1583,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6352175411909708963}
   m_Layer: 0
-  m_Name: CellingFan
+  m_Name: AHITChallenge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
