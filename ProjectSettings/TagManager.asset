@@ -4,12 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Exit
   - Thrower
   - MovingPlatform
-  - Death
-  - Checkpoint
-  - Life
   layers:
   - Default
   - TransparentFX
