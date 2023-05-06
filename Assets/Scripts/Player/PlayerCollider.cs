@@ -34,7 +34,7 @@ public class PlayerCollider : MonoBehaviour
         if (collision.gameObject.CompareTag("MovingPlatform") && !wasGrounded)
         {
             movingPlatform.SetPlatform(collision.gameObject);
-            movingPlatform.SetLastRotation(collision.transform.eulerAngles.y);
+            movingPlatform.SetLastRotation(collision.transform.eulerAngles);
             movingPlatform.SetLastPosition(collision.transform.position);
             wasGrounded = isGrounded.Value;
         }
