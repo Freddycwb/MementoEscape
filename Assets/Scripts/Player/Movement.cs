@@ -34,6 +34,8 @@ public class Movement : MonoBehaviour
     [SerializeField] private float dashJumpForce;
     private bool canDash;
     private bool canDashJump;
+    
+    [SerializeField] private bool cameraYRotate;
 
     private void Awake()
     {
@@ -54,9 +56,9 @@ public class Movement : MonoBehaviour
 
     private void Update()
     {
+        FollowPlatform();
         Jump();
         Dash();
-        FollowPlatform();
     }
 
     private void FollowPlatform()
@@ -66,14 +68,25 @@ public class Movement : MonoBehaviour
             return;
         }
 
+        // Follow moving platform
         Vector3 moveDistance = movingPlatform.platform.transform.position - movingPlatform.lastPosition;
         transform.position += moveDistance;
 
-        // rotating with the platform
-        float rot = movingPlatform.platform.transform.eulerAngles.y - movingPlatform.lastRotation;
-        transform.Rotate(0, rot, 0);
+        // Follow rotating platform
+        float rot, rotRad;
+        Vector3 a, b, diff;
 
-        movingPlatform.SetLastRotation(movingPlatform.platform.transform.eulerAngles.y);
+        // y rotation
+        rot = movingPlatform.platform.transform.eulerAngles.y - movingPlatform.lastRotation.y;
+        rotRad = rot * Mathf.Deg2Rad;
+        a = new Vector3(Mathf.Sin(rotRad), 0, Mathf.Cos(rotRad));
+        b = new Vector3(Mathf.Cos(rotRad), 0, -Mathf.Sin(rotRad));
+        diff = transform.position - movingPlatform.platform.transform.position;
+        diff.y = 0;
+        transform.position += diff.x * b + diff.z * a - diff;
+        if (cameraYRotate) transform.Rotate(0, rot, 0);
+
+        movingPlatform.SetLastRotation(movingPlatform.platform.transform.eulerAngles);
         movingPlatform.SetLastPosition(movingPlatform.platform.transform.position);
     }
 
