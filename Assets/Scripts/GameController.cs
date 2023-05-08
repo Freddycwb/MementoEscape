@@ -41,7 +41,6 @@ public class GameController : MonoBehaviour
         PlayerPrefs.SetFloat("gameTime", timeToFinish);
 
         hudAnimator = hud.GetComponent<Animator>();
-
         spawnPoint = player.transform.position;
     }
 
@@ -110,6 +109,7 @@ public class GameController : MonoBehaviour
 
     public void PickedLife()
     {
+        timeToFinish += 10;
         StartCoroutine("ShowStatus");
     }
 
