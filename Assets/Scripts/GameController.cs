@@ -74,7 +74,7 @@ public class GameController : MonoBehaviour
         if (timeToFinish <= 0)
         {
             PlayerPrefs.SetFloat("currentTime", -1);
-            SceneManager.LoadScene("GameOver");
+            SceneManager.LoadScene("Menu");
         }
         else
         {
@@ -127,6 +127,6 @@ public class GameController : MonoBehaviour
     public void Victory()
     {
         PlayerPrefs.SetFloat("currentTime", timeToFinish);
-        SceneManager.LoadScene("GameOver");
+        SceneManager.LoadScene("Menu");
     }
 }

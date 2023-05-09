@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
-public class GameOver : MonoBehaviour
+public class MenuController : MonoBehaviour
 {
     [SerializeField] private Image background;
     [SerializeField] private TextMeshProUGUI time;
-
     [SerializeField] private Sprite timeOverBackground;
-    [SerializeField] private Sprite deathBackground;
+
+    private Animator animator;
 
     private void Start()
     {
@@ -20,19 +20,24 @@ public class GameOver : MonoBehaviour
         {
             background.sprite = timeOverBackground;
         }
-        else if (PlayerPrefs.GetFloat("currentTime") == -10)
-        {
-            background.sprite = deathBackground;
-        }
         else
         {
             float t = Mathf.Abs(PlayerPrefs.GetFloat("currentTime") - PlayerPrefs.GetFloat("gameTime"));
             time.text = (Mathf.Floor(t / 60)).ToString() + ":" + ((int)t % 60).ToString("d2"); ;
         }
+        animator = GetComponent<Animator>();
     }
 
-    public void PlayAgain()
+    public void Play()
     {
-        SceneManager.LoadScene("Game");
+        PlayerPrefs.SetFloat("cutscene", 0);
+        animator.enabled = true;
+        StartCoroutine("WaitForTransition");
+    }
+
+    public IEnumerator WaitForTransition()
+    {
+        yield return new WaitForSeconds(0.4f);
+        SceneManager.LoadScene("Cutscene");
     }
 }
