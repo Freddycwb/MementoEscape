@@ -8,10 +8,12 @@ using TMPro;
 public class MenuController : MonoBehaviour
 {
     [SerializeField] private Image background;
-    [SerializeField] private TextMeshProUGUI time;
-    [SerializeField] private Sprite timeOverBackground;
 
     private Animator animator;
+    [SerializeField] private Animator blackscreen;
+
+    [SerializeField] private TextMeshProUGUI time;
+    [SerializeField] private Sprite timeOverBackground;
 
     private void Start()
     {
@@ -31,7 +33,7 @@ public class MenuController : MonoBehaviour
     public void Play()
     {
         PlayerPrefs.SetFloat("cutscene", 0);
-        animator.enabled = true;
+        blackscreen.Play("Transition");
         StartCoroutine("WaitForTransition");
     }
 
