@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7f817f6bea27f1a44bfa71308ef6f2ec
+guid: eb9e2f48f4e03a54f9be034891a64cf4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,22 +105,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPR_EV_BODY_new
+      name: SpritePlayerDeath
       rect:
         serializedVersion: 2
-        x: 1011
+        x: 1066
         y: 438
-        width: 537
-        height: 634
+        width: 427
+        height: 586
       alignment: 9
-      pivot: {x: 0.5, y: 0.15761338}
+      pivot: {x: 0.5, y: 0.1670275}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b67dc419af49af6439e2f0f2744055c7
-      internalID: -529551011
+      spriteID: 54a03978f15871b45a31ddddc624a8b7
+      internalID: 107582763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteGlassParticle2
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 661
+        width: 152
+        height: 118
+      alignment: 9
+      pivot: {x: 0.46790776, y: 0.5413405}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf4779ee60aee654bb90c007c236f9a2
+      internalID: -1065470614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteGlassParticle1
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 372
+        width: 116
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5619ff48f86ecda47985dbb0161592d8
+      internalID: -310864852
       vertices: []
       indices: 
       edges: []
@@ -128,7 +170,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 064bf7f4e62a91943b61871f7de71176
+    spriteID: 83f61a4473632404ea77a5a99e9f91cc
     internalID: 0
     vertices: []
     indices: 
@@ -136,7 +178,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SPR_EV_BODY_new: -529551011
+      SpriteGlassParticle1: -310864852
+      SpriteGlassParticle2: -1065470614
+      SpritePlayerDeath: 107582763
+      particulas de vidro e everestinho morto spritesheet_0: 1820445651
+      particulas de vidro e everestinho morto spritesheet_1: -421813540
+      particulas de vidro e everestinho morto spritesheet_2: 1916950485
+      particulas de vidro e everestinho morto spritesheet_4: 1985847150
+      particulas de vidro e everestinho morto spritesheet_5: -423242215
+      particulas de vidro e everestinho morto spritesheet_6: 1569218692
+      particulas de vidro e everestinho morto spritesheet_8: -2037730164
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

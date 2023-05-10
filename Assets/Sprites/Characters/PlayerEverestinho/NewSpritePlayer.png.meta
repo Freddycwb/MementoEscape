@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 57712ab86c55cda4092d8be577beabdc
+guid: 7f817f6bea27f1a44bfa71308ef6f2ec
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,28 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPR_EV_ARM
-      rect:
-        serializedVersion: 2
-        x: 342
-        y: 955
-        width: 221
-        height: 142
-      alignment: 9
-      pivot: {x: 0.080620125, y: 0.41411966}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 40df5a79b37988c42956933c67a45383
-      internalID: -1175741333
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPR_EV_BODY
+      name: SpriteNewPlayer
       rect:
         serializedVersion: 2
         x: 1011
@@ -134,56 +113,14 @@ TextureImporter:
         width: 537
         height: 634
       alignment: 9
-      pivot: {x: 0.5, y: 0.15376633}
+      pivot: {x: 0.5, y: 0.15761338}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3731c128eadd6e34489e597bbcf3195a
-      internalID: 1082327910
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPR_EV_GLASS
-      rect:
-        serializedVersion: 2
-        x: 1929
-        y: 839
-        width: 537
-        height: 533
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 92999ca5bc1be274ba588df9b9be9d7d
-      internalID: -998953070
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SPR_EV_FOOT
-      rect:
-        serializedVersion: 2
-        x: 267
-        y: 127
-        width: 236
-        height: 145
-      alignment: 9
-      pivot: {x: 0.6653577, y: 0.7523141}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 952ed7384ecde6a47aec59de414becc6
-      internalID: -945753898
+      spriteID: b67dc419af49af6439e2f0f2744055c7
+      internalID: -529551011
       vertices: []
       indices: 
       edges: []
@@ -191,7 +128,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: e5a88a37a06aa7e4a99f1a3e35151c4b
+    spriteID: 064bf7f4e62a91943b61871f7de71176
     internalID: 0
     vertices: []
     indices: 
@@ -199,10 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SPR_EV_ARM: -1175741333
-      SPR_EV_BODY: 1082327910
-      SPR_EV_FOOT: -945753898
-      SPR_EV_GLASS: -998953070
+      SpriteNewPlayer: -529551011
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
