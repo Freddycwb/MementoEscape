@@ -81,7 +81,7 @@ GameObject:
   - component: {fileID: 9176029375018548992}
   - component: {fileID: 9176029375018548993}
   m_Layer: 0
-  m_Name: Glass
+  m_Name: Glass1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1551,7 +1551,7 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: 7482667652216324306, guid: 55d14ddb6aaecfa4497607b09f2dfcbc, type: 3}
+    - sprite: {fileID: -310864852, guid: eb9e2f48f4e03a54f9be034891a64cf4, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -4893,7 +4893,7 @@ GameObject:
   - component: {fileID: 9176029376510831765}
   - component: {fileID: 9176029376510831770}
   m_Layer: 0
-  m_Name: Snow
+  m_Name: Glass2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6363,7 +6363,7 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: 7482667652216324306, guid: 55d14ddb6aaecfa4497607b09f2dfcbc, type: 3}
+    - sprite: {fileID: -1065470614, guid: eb9e2f48f4e03a54f9be034891a64cf4, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
