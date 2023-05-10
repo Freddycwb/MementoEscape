@@ -1,12 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerInput : MonoBehaviour, IInput
 {
     public GameObject camera;
     private bool canControl = true;
 
+    [SerializeField] private InputActionAsset playerControls;
+    private InputActionMap controls;
+    private bool controlJump;
+    private bool controlDash;
+
+
+    private void Awake()
+    {
+        controls = playerControls.FindActionMap("Gameplay");
+        controls.FindAction("Jump").performed += ctx => Jump();
+        controls.FindAction("Dash").performed += ctx => Dash();
+    }
+
+    private void Jump()
+    {
+        controlJump = true;
+    }
+
+    private void Dash()
+    {
+        controlDash = true;
+    }
 
     public Vector3 direction
     {
@@ -41,7 +64,7 @@ public class PlayerInput : MonoBehaviour, IInput
         {
             if (canControl)
             {
-                return Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0);
+                return Input.GetKeyDown(KeyCode.Space) || controlJump;
             }
             else
             {
@@ -56,7 +79,7 @@ public class PlayerInput : MonoBehaviour, IInput
         {
             if (canControl)
             {
-                return Input.GetKeyDown(KeyCode.N) || Input.GetMouseButtonDown(1);
+                return Input.GetKeyDown(KeyCode.LeftShift) || controlDash;
             }
             else
             {
@@ -65,8 +88,24 @@ public class PlayerInput : MonoBehaviour, IInput
         }
     }
 
+    private void LateUpdate()
+    {
+        controlJump = false;
+        controlDash = false;
+    }
+
     public void SetCanControl(bool state)
     {
         canControl = state;
+    }
+
+    private void OnEnable()
+    {
+        playerControls.FindActionMap("Gameplay").Enable();
+    }
+
+    private void OnDisable()
+    {
+        playerControls.FindActionMap("Gameplay").Disable();
     }
 }

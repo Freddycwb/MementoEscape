@@ -10,11 +10,12 @@ public class PlayerCamera : MonoBehaviour
     private void Start()
     {
         cameraSetting = GetComponent<CinemachineFreeLook>();
+        SetSensitivity();
     }
 
     public void SetSensitivity()
     {
-        cameraSetting.m_XAxis.m_MaxSpeed = PlayerPrefs.GetFloat("sensitivity") * 9000;
-        cameraSetting.m_YAxis.m_MaxSpeed = PlayerPrefs.GetFloat("sensitivity") * 60;
+        cameraSetting.m_XAxis.m_MaxSpeed = PlayerPrefs.GetFloat("sensitivity") * 3000;
+        cameraSetting.m_YAxis.m_MaxSpeed = PlayerPrefs.GetFloat("sensitivity") * 20;
     }
 }

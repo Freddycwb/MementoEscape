@@ -10,21 +10,10 @@ public class Pause : MonoBehaviour
 
     private void Awake()
     {
+        sensitivitySlider.value = PlayerPrefs.GetFloat("sensitivity");
         sensitivitySlider.onValueChanged.AddListener((delegate {
             PlayerPrefs.SetFloat("sensitivity", sensitivitySlider.value);
             sensitivityChange.Raise();
         }));
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
