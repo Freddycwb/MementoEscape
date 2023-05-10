@@ -415,10 +415,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aa91f55cdefc5542893813abaee9005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameFrom: {fileID: 11400000, guid: 132dfe5cf6cf9584a9879cd80e20d2ed, type: 2}
+  gameTime: {fileID: 11400000, guid: 688405d78f2d1234793894e35b1bd428, type: 2}
+  lastRunTime: {fileID: 11400000, guid: fa95cf883d095b84dbfa311dcfaf4716, type: 2}
   background: {fileID: 841126191}
+  gameOver: {fileID: 1824277862}
   blackscreen: {fileID: 1627589064}
   time: {fileID: 2141664402}
   timeOverBackground: {fileID: 21300000, guid: b631a08431334424990db3075a17ef37, type: 3}
+  victoryBackground: {fileID: 21300000, guid: 124622a8f605db14f8ce61d6f095f434, type: 3}
 --- !u!95 &1109829379
 Animator:
   serializedVersion: 5
@@ -941,6 +946,10 @@ PrefabInstance:
     - target: {fileID: 2820729179924283143, guid: 2be324a4092276b43972aab548f13d28, type: 3}
       propertyPath: m_Name
       value: BlackScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 2820729179924283143, guid: 2be324a4092276b43972aab548f13d28, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2be324a4092276b43972aab548f13d28, type: 3}

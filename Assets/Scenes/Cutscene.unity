@@ -983,6 +983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 060fbd1fecac8b84bb5ee8ee3c58ef51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameFrom: {fileID: 11400000, guid: 132dfe5cf6cf9584a9879cd80e20d2ed, type: 2}
   blackscreen: {fileID: 2047748898}
 --- !u!1 &1228028183
 GameObject:

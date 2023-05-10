@@ -3,44 +3,48 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
-using UnityEngine.UI;
 using System;
 using Cinemachine;
 
 public class GameController : MonoBehaviour
 {
+    [SerializeField] private StringVariable cameFrom;
+    [SerializeField] private FloatVariable gameTime;
+    [SerializeField] private FloatVariable lastRunTime;
+
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject thirdPersonCamera;
     [SerializeField] private GameEvent respawn;
     private Vector3 spawnPoint;
 
     [SerializeField] private GameObject hud;
-    [SerializeField] private Image status;
-    [SerializeField] private Sprite[] statusHP;
-    private Animator hudAnimator;
     [SerializeField] private TextMeshProUGUI timerTMP;
     public float timeToFinish;
     [SerializeField] private TextMeshProUGUI scoreTMP;
     private float scoreValue;
 
     [SerializeField] private GameObject pauseMenu;
-    [SerializeField] private Slider sensitivitySlider;
-    [SerializeField] private GameEvent sensitivityChange;
 
-    private void Awake()
-    {
-        sensitivitySlider.onValueChanged.AddListener((delegate {
-            PlayerPrefs.SetFloat("sensitivity", sensitivitySlider.value);
-            sensitivityChange.Raise();
-        }));
-    }
+    [SerializeField] private GameObject tutorial;
+    [SerializeField] private Vector3 tutorialPlayerPos;
+    [SerializeField] private GameObject store;
+    [SerializeField] private Vector3 storePlayerPos;
 
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        PlayerPrefs.SetFloat("gameTime", timeToFinish);
+        gameTime.Value = timeToFinish;
 
-        hudAnimator = hud.GetComponent<Animator>();
+        if (cameFrom.Value == "CutsceneTutorial" || cameFrom.Value == "")
+        {
+            Instantiate(tutorial);
+            player.transform.position = tutorialPlayerPos;
+        }
+        else if (cameFrom.Value == "CutsceneSkipTutorial")
+        {
+            Instantiate(store);
+            player.transform.position = storePlayerPos;
+        }
         spawnPoint = player.transform.position;
     }
 
@@ -73,7 +77,7 @@ public class GameController : MonoBehaviour
     {
         if (timeToFinish <= 0)
         {
-            PlayerPrefs.SetFloat("currentTime", -1);
+            cameFrom.Value = "GameTimerRunOut";
             SceneManager.LoadScene("Menu");
         }
         else
@@ -97,7 +101,6 @@ public class GameController : MonoBehaviour
     {
         yield return new WaitForSeconds(0.75f);
         player.transform.position = spawnPoint;
-        hudAnimator.Play("ShowStatus");
         yield return new WaitForSeconds(0.25f);
         respawn.Raise();
     }
@@ -110,7 +113,6 @@ public class GameController : MonoBehaviour
     public void PickedLife()
     {
         timeToFinish += 10;
-        StartCoroutine("ShowStatus");
     }
 
     public void PickedPoint()
@@ -118,15 +120,10 @@ public class GameController : MonoBehaviour
         scoreValue += 10;
     }
 
-    private IEnumerator ShowStatus()
-    {
-        hudAnimator.Play("ShowStatus");
-        yield return new WaitForSeconds(0.25f);
-    }
-
     public void Victory()
     {
-        PlayerPrefs.SetFloat("currentTime", timeToFinish);
+        cameFrom.Value = "GameVictory";
+        lastRunTime.Value = timeToFinish;
         SceneManager.LoadScene("Menu");
     }
 }

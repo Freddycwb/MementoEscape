@@ -7,32 +7,44 @@ using TMPro;
 
 public class MenuController : MonoBehaviour
 {
+    [SerializeField] private StringVariable cameFrom;
+    [SerializeField] private FloatVariable gameTime;
+    [SerializeField] private FloatVariable lastRunTime;
+
     [SerializeField] private Image background;
 
-    private Animator animator;
+    [SerializeField] private GameObject gameOver;
     [SerializeField] private Animator blackscreen;
 
     [SerializeField] private TextMeshProUGUI time;
     [SerializeField] private Sprite timeOverBackground;
+    [SerializeField] private Sprite victoryBackground;
 
     private void Start()
     {
         Cursor.lockState = CursorLockMode.None;
-        if (PlayerPrefs.GetFloat("currentTime") == -1)
+        if (cameFrom.Value == "GameTimerRunOut")
         {
             background.sprite = timeOverBackground;
+            gameOver.SetActive(true);  
+            cameFrom.Value = "MenuTimerRunOut";
         }
-        else
+        else if (cameFrom.Value == "GameVictory")
         {
-            float t = Mathf.Abs(PlayerPrefs.GetFloat("currentTime") - PlayerPrefs.GetFloat("gameTime"));
-            time.text = (Mathf.Floor(t / 60)).ToString() + ":" + ((int)t % 60).ToString("d2"); ;
+            background.sprite = victoryBackground;
+            gameOver.SetActive(true);
+            float t = Mathf.Abs(lastRunTime.Value - gameTime.Value);
+            time.text = (Mathf.Floor(t / 60)).ToString() + ":" + ((int)t % 60).ToString("d2");
+            cameFrom.Value = "MenuTimerRunOut";
         }
-        animator = GetComponent<Animator>();
+        if (cameFrom.Value == "")
+        {
+            cameFrom.Value = "Menu";
+        }
     }
 
     public void Play()
     {
-        PlayerPrefs.SetFloat("cutscene", 0);
         blackscreen.Play("Transition");
         StartCoroutine("WaitForTransition");
     }

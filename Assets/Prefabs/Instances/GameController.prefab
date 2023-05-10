@@ -31,7 +31,7 @@ RectTransform:
   m_GameObject: {fileID: 3807437708437859264}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.02625, y: 1.02625, z: 1.02625}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -54,22 +54,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 932d1ccaaba0d814d85ceb743e609790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameFrom: {fileID: 11400000, guid: 132dfe5cf6cf9584a9879cd80e20d2ed, type: 2}
+  gameTime: {fileID: 11400000, guid: 688405d78f2d1234793894e35b1bd428, type: 2}
+  lastRunTime: {fileID: 11400000, guid: fa95cf883d095b84dbfa311dcfaf4716, type: 2}
   player: {fileID: 0}
   thirdPersonCamera: {fileID: 0}
   respawn: {fileID: 11400000, guid: 8c7cff57632c8784591fbca69665810a, type: 2}
   hud: {fileID: 0}
-  status: {fileID: 0}
-  statusHP:
-  - {fileID: 21300000, guid: 8fc5ba906b768d04e95a6ef3b66d666b, type: 3}
-  - {fileID: 21300000, guid: 763925e5580b56346b09580d0198c42f, type: 3}
-  - {fileID: 21300000, guid: 4500e2833527de447aaf80ddfb8c51c9, type: 3}
-  - {fileID: 21300000, guid: f419402ae3a99fb4ea8c9426b5d5fa48, type: 3}
   timerTMP: {fileID: 0}
   timeToFinish: 300
   scoreTMP: {fileID: 0}
   pauseMenu: {fileID: 0}
-  sensitivitySlider: {fileID: 0}
-  sensitivityChange: {fileID: 11400000, guid: 99a032604839b3449bfa5c9bd0c65032, type: 2}
+  tutorial: {fileID: 4636120979807731282, guid: 4a2a15a741218b64a9dc7ef392772427, type: 3}
+  tutorialPlayerPos: {x: -9, y: 0, z: -8}
+  store: {fileID: 735343651769376023, guid: 70be3a9d9cbf9f74e9d1923b07e6b95a, type: 3}
+  storePlayerPos: {x: 0, y: 0, z: 0}
 --- !u!114 &3807437708437859325
 MonoBehaviour:
   m_ObjectHideFlags: 0
