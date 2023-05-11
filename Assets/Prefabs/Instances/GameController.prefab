@@ -65,6 +65,7 @@ MonoBehaviour:
   timeToFinish: 300
   scoreTMP: {fileID: 0}
   pauseMenu: {fileID: 0}
+  blackscreen: {fileID: 0}
   tutorial: {fileID: 4636120979807731282, guid: 4a2a15a741218b64a9dc7ef392772427, type: 3}
   tutorialPlayerPos: {x: -9, y: 0, z: -8}
   store: {fileID: 735343651769376023, guid: 70be3a9d9cbf9f74e9d1923b07e6b95a, type: 3}
@@ -87,7 +88,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3807437708437859267}
         m_TargetAssemblyTypeName: GameController, Assembly-CSharp
-        m_MethodName: Victory
+        m_MethodName: Finish
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

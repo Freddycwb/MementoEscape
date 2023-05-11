@@ -24,6 +24,7 @@ public class GameController : MonoBehaviour
     private float scoreValue;
 
     [SerializeField] private GameObject pauseMenu;
+    [SerializeField] private Animator blackscreen;
 
     [SerializeField] private GameObject tutorial;
     [SerializeField] private Vector3 tutorialPlayerPos;
@@ -39,8 +40,9 @@ public class GameController : MonoBehaviour
         {
             Instantiate(tutorial);
             player.transform.position = tutorialPlayerPos;
+            hud.SetActive(false);
         }
-        else if (cameFrom.Value == "CutsceneSkipTutorial")
+        else if (cameFrom.Value == "CutsceneSkipTutorial" || cameFrom.Value == "CutsceneTutorialEnd")
         {
             Instantiate(store);
             player.transform.position = storePlayerPos;
@@ -51,7 +53,10 @@ public class GameController : MonoBehaviour
     private void Update()
     {
         Pause();
-        Timer();
+        if (cameFrom.Value == "CutsceneSkipTutorial" || cameFrom.Value == "CutsceneTutorialEnd")
+        {
+            Timer();
+        }
         Score();
     }
 
@@ -120,10 +125,25 @@ public class GameController : MonoBehaviour
         scoreValue += 10;
     }
 
-    public void Victory()
+    public void Finish()
     {
-        cameFrom.Value = "GameVictory";
-        lastRunTime.Value = timeToFinish;
-        SceneManager.LoadScene("Menu");
+        if (cameFrom.Value == "CutsceneTutorial" || cameFrom.Value == "")
+        {
+            cameFrom.Value = "GameTutorialEnd";
+            StartCoroutine("CallTransition", "Cutscene");
+        }
+        else
+        {
+            cameFrom.Value = "GameVictory";
+            lastRunTime.Value = timeToFinish;
+            StartCoroutine("CallTransition", "Menu");
+        }
+    }
+
+    private IEnumerator CallTransition(string scene)
+    {
+        blackscreen.Play("Transition");
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene(scene);
     }
 }

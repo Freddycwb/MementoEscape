@@ -13,6 +13,7 @@ public class MenuController : MonoBehaviour
 
     [SerializeField] private Image background;
 
+    [SerializeField] private GameObject main;
     [SerializeField] private GameObject gameOver;
     [SerializeField] private Animator blackscreen;
 
@@ -26,12 +27,14 @@ public class MenuController : MonoBehaviour
         if (cameFrom.Value == "GameTimerRunOut")
         {
             background.sprite = timeOverBackground;
+            main.SetActive(false);
             gameOver.SetActive(true);  
             cameFrom.Value = "MenuTimerRunOut";
         }
         else if (cameFrom.Value == "GameVictory")
         {
             background.sprite = victoryBackground;
+            main.SetActive(false);
             gameOver.SetActive(true);
             float t = Mathf.Abs(lastRunTime.Value - gameTime.Value);
             time.text = (Mathf.Floor(t / 60)).ToString() + ":" + ((int)t % 60).ToString("d2");

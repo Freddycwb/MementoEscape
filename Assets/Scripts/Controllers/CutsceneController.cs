@@ -16,7 +16,18 @@ public class CutsceneController : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
-        playingCutscene = "TutorialOption";
+        if (cameFrom.Value == "Menu")
+        {
+            playingCutscene = "TutorialOption";
+        }
+        else if (cameFrom.Value == "GameTutorialEnd")
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            playingCutscene = "TutorialEnd";
+            animator.Play("TutorialEndCutscene");
+            StartCoroutine("WaitForTutorialEndCutscene");
+            cameFrom.Value = "CutsceneTutorialEnd";
+        }
     }
 
     private void Update()
@@ -63,6 +74,14 @@ public class CutsceneController : MonoBehaviour
     public IEnumerator WaitForTutorialCutscene()
     {
         yield return new WaitForSeconds(11);
+        blackscreen.Play("Transition");
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene("Game");
+    }
+
+    public IEnumerator WaitForTutorialEndCutscene()
+    {
+        yield return new WaitForSeconds(6);
         blackscreen.Play("Transition");
         yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene("Game");

@@ -419,6 +419,7 @@ MonoBehaviour:
   gameTime: {fileID: 11400000, guid: 688405d78f2d1234793894e35b1bd428, type: 2}
   lastRunTime: {fileID: 11400000, guid: fa95cf883d095b84dbfa311dcfaf4716, type: 2}
   background: {fileID: 841126191}
+  main: {fileID: 1586174894}
   gameOver: {fileID: 1824277862}
   blackscreen: {fileID: 1627589064}
   time: {fileID: 2141664402}
