@@ -6,15 +6,9 @@ using UnityEngine.InputSystem.Controls;
 
 public class PlayerInput : MonoBehaviour, IInput
 {
-    public GameObject camera;
-    [SerializeField] private GameObjectVariable player;
+    [SerializeField] private GameObject camera;
     private bool canControl = true;
 
-
-    private void Awake()
-    {
-        player.Value = gameObject;
-    }
 
     public Vector3 direction
     {

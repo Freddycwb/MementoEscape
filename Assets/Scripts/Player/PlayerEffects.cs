@@ -56,7 +56,6 @@ public class PlayerEffects : MonoBehaviour
         Vector3 vel = _input.direction.normalized;
         Vector3 heading = vel - vel.y * Vector3.up;
         float rotY = Mathf.Atan2(heading.z, -heading.x) * Mathf.Rad2Deg;
-        Debug.Log(heading);
         Instantiate(dashParticle, transform.position, Quaternion.Euler(-90, rotY - 90, 0));
         Instantiate(dashSound, transform.position, transform.rotation);
     }

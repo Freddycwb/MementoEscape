@@ -7,13 +7,12 @@ public class PlayerCamera : MonoBehaviour
 {
     private CinemachineFreeLook cameraSetting;
     private IInput _input;
-    [SerializeField] private GameObjectVariable player;
-
+    [SerializeField] private GameObject player;
 
     private void Start()
     {
         cameraSetting = GetComponent<CinemachineFreeLook>();
-        _input = player.Value.GetComponent<PlayerInput>();
+        _input = player.GetComponent<PlayerInput>();
     }
 
     private void Update()

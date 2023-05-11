@@ -12,19 +12,14 @@ public class GameController : MonoBehaviour
     [SerializeField] private FloatVariable gameTime;
     [SerializeField] private FloatVariable lastRunTime;
 
-    [SerializeField] private GameObjectVariable player;
+    [SerializeField] private GameObject player;
     [SerializeField] private GameObject thirdPersonCamera;
+    [SerializeField] private CanvasObjects canvas;
     [SerializeField] private GameEvent respawn;
     private Vector3 spawnPoint;
 
-    [SerializeField] private GameObject hud;
-    [SerializeField] private TextMeshProUGUI timerTMP;
     public float timeToFinish;
-    [SerializeField] private TextMeshProUGUI scoreTMP;
     private float scoreValue;
-
-    [SerializeField] private GameObject pauseMenu;
-    [SerializeField] private Animator blackscreen;
 
     [SerializeField] private GameObject tutorial;
     [SerializeField] private Vector3 tutorialPlayerPos;
@@ -39,15 +34,15 @@ public class GameController : MonoBehaviour
         if (cameFrom.Value == "CutsceneTutorial" || cameFrom.Value == "")
         {
             Instantiate(tutorial);
-            player.Value.transform.position = tutorialPlayerPos;
-            hud.SetActive(false);
+            player.transform.position = tutorialPlayerPos;
+            canvas.hud.SetActive(false);
         }
         else if (cameFrom.Value == "CutsceneSkipTutorial" || cameFrom.Value == "CutsceneTutorialEnd")
         {
             Instantiate(store);
-            player.Value.transform.position = storePlayerPos;
+            player.transform.position = storePlayerPos;
         }
-        spawnPoint = player.Value.transform.position;
+        spawnPoint = player.transform.position;
     }
 
     private void Update()
@@ -64,10 +59,10 @@ public class GameController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            pauseMenu.SetActive(!pauseMenu.activeSelf);
-            player.Value.GetComponent<PlayerInput>().SetCanControl(!pauseMenu.activeSelf);
-            thirdPersonCamera.GetComponentInChildren<CinemachineFreeLook>().enabled = !pauseMenu.activeSelf;
-            if (pauseMenu.activeSelf)
+            canvas.pauseMenu.SetActive(!canvas.pauseMenu.activeSelf);
+            player.GetComponent<PlayerInput>().SetCanControl(!canvas.pauseMenu.activeSelf);
+            thirdPersonCamera.GetComponentInChildren<CinemachineFreeLook>().enabled = !canvas.pauseMenu.activeSelf;
+            if (canvas.pauseMenu.activeSelf)
             {
                 Cursor.lockState = CursorLockMode.None;
             }
@@ -87,14 +82,14 @@ public class GameController : MonoBehaviour
         }
         else
         {
-            timerTMP.text = (Mathf.Floor(timeToFinish / 60)).ToString() + ":" + ((int)timeToFinish % 60).ToString("d2");
+            canvas.timerTMP.text = (Mathf.Floor(timeToFinish / 60)).ToString() + ":" + ((int)timeToFinish % 60).ToString("d2");
             timeToFinish -= Time.deltaTime;
         }
     }
 
     private void Score()
     {
-        scoreTMP.text = scoreValue.ToString();
+        canvas.scoreTMP.text = scoreValue.ToString();
     }
 
     public void Death()
@@ -105,14 +100,14 @@ public class GameController : MonoBehaviour
     private IEnumerator Respawn()
     {
         yield return new WaitForSeconds(0.75f);
-        player.Value.transform.position = spawnPoint;
+        player.transform.position = spawnPoint;
         yield return new WaitForSeconds(0.25f);
         respawn.Raise();
     }
 
     public void Checkpoint()
     {
-        spawnPoint = player.Value.transform.position;
+        spawnPoint = player.transform.position;
     }
 
     public void PickedLife()
@@ -142,7 +137,7 @@ public class GameController : MonoBehaviour
 
     private IEnumerator CallTransition(string scene)
     {
-        blackscreen.Play("Transition");
+        canvas.blackscreen.Play("Transition");
         yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene(scene);
     }
