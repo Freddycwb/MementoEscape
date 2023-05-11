@@ -637,7 +637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 0}
-  playerControls: {fileID: -944628639613478452, guid: 63d4674e1dbae564bab8ddc3e03f5c1e, type: 3}
+  player: {fileID: 11400000, guid: 5753d8dd94d987946b8f20223886df07, type: 2}
 --- !u!136 &2005164230133718159
 CapsuleCollider:
   m_ObjectHideFlags: 0

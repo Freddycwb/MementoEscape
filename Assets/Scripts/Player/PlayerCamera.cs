@@ -6,16 +6,19 @@ using Cinemachine;
 public class PlayerCamera : MonoBehaviour
 {
     private CinemachineFreeLook cameraSetting;
+    private IInput _input;
+    [SerializeField] private GameObjectVariable player;
+
 
     private void Start()
     {
         cameraSetting = GetComponent<CinemachineFreeLook>();
-        SetSensitivity();
+        _input = player.Value.GetComponent<PlayerInput>();
     }
 
-    public void SetSensitivity()
+    private void Update()
     {
-        cameraSetting.m_XAxis.m_MaxSpeed = PlayerPrefs.GetFloat("sensitivity") * 3000;
-        cameraSetting.m_YAxis.m_MaxSpeed = PlayerPrefs.GetFloat("sensitivity") * 20;
+        cameraSetting.m_XAxis.Value += _input.look.y * PlayerPrefs.GetFloat("sensitivity") * 750 * Time.deltaTime;
+        cameraSetting.m_YAxis.Value += -_input.look.x * PlayerPrefs.GetFloat("sensitivity") * 5 * Time.deltaTime;
     }
 }

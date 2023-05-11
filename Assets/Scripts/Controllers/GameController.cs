@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour
     [SerializeField] private FloatVariable gameTime;
     [SerializeField] private FloatVariable lastRunTime;
 
-    [SerializeField] private GameObject player;
+    [SerializeField] private GameObjectVariable player;
     [SerializeField] private GameObject thirdPersonCamera;
     [SerializeField] private GameEvent respawn;
     private Vector3 spawnPoint;
@@ -39,15 +39,15 @@ public class GameController : MonoBehaviour
         if (cameFrom.Value == "CutsceneTutorial" || cameFrom.Value == "")
         {
             Instantiate(tutorial);
-            player.transform.position = tutorialPlayerPos;
+            player.Value.transform.position = tutorialPlayerPos;
             hud.SetActive(false);
         }
         else if (cameFrom.Value == "CutsceneSkipTutorial" || cameFrom.Value == "CutsceneTutorialEnd")
         {
             Instantiate(store);
-            player.transform.position = storePlayerPos;
+            player.Value.transform.position = storePlayerPos;
         }
-        spawnPoint = player.transform.position;
+        spawnPoint = player.Value.transform.position;
     }
 
     private void Update()
@@ -65,7 +65,7 @@ public class GameController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             pauseMenu.SetActive(!pauseMenu.activeSelf);
-            player.GetComponent<PlayerInput>().SetCanControl(!pauseMenu.activeSelf);
+            player.Value.GetComponent<PlayerInput>().SetCanControl(!pauseMenu.activeSelf);
             thirdPersonCamera.GetComponentInChildren<CinemachineFreeLook>().enabled = !pauseMenu.activeSelf;
             if (pauseMenu.activeSelf)
             {
@@ -105,14 +105,14 @@ public class GameController : MonoBehaviour
     private IEnumerator Respawn()
     {
         yield return new WaitForSeconds(0.75f);
-        player.transform.position = spawnPoint;
+        player.Value.transform.position = spawnPoint;
         yield return new WaitForSeconds(0.25f);
         respawn.Raise();
     }
 
     public void Checkpoint()
     {
-        spawnPoint = player.transform.position;
+        spawnPoint = player.Value.transform.position;
     }
 
     public void PickedLife()

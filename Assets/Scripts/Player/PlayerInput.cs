@@ -2,43 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Controls;
 
 public class PlayerInput : MonoBehaviour, IInput
 {
     public GameObject camera;
+    [SerializeField] private GameObjectVariable player;
     private bool canControl = true;
-
-    [SerializeField] private InputActionAsset playerControls;
-    private InputActionMap controls;
-    private bool controlJump;
-    private bool controlDash;
 
 
     private void Awake()
     {
-        controls = playerControls.FindActionMap("Gameplay");
-        controls.FindAction("Jump").performed += ctx => Jump();
-        controls.FindAction("Dash").performed += ctx => Dash();
-    }
-
-    private void Jump()
-    {
-        controlJump = true;
-    }
-
-    private void Dash()
-    {
-        controlDash = true;
+        player.Value = gameObject;
     }
 
     public Vector3 direction
     {
         get
         {
-            float x = Input.GetAxisRaw("Horizontal");
-            float z = Input.GetAxisRaw("Vertical");
-
-            Vector3 move = new Vector3(x, 0, z);
+            Vector3 gamepadMove = Vector3.zero;
+            if (Gamepad.current != null)
+            {
+                StickControl stick = Gamepad.current.leftStick;
+                gamepadMove = new Vector3(stick.right.value - stick.left.value, 0, stick.up.value - stick.down.value);
+            }
+            Vector3 keyboardMove = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+            Vector3 move = keyboardMove + gamepadMove;
 
             float headAngle = Mathf.Deg2Rad * (360 - camera.transform.rotation.eulerAngles.y);
 
@@ -58,13 +47,37 @@ public class PlayerInput : MonoBehaviour, IInput
         }
     }
 
+    public Vector2 look
+    {
+        get
+        {
+            if (!canControl)
+            {
+                return Vector2.zero;
+            }
+            Vector2 gamepadLook = Vector2.zero;
+            if (Gamepad.current != null)
+            {
+                StickControl stick = Gamepad.current.rightStick;
+                gamepadLook = new Vector2(stick.up.value - stick.down.value, stick.right.value - stick.left.value);
+            }
+            Vector2 mouseLook = new Vector2(Mouse.current.delta.value.y, Mouse.current.delta.value.x);
+            return mouseLook + gamepadLook;
+        }
+    }
+
     public bool jump
     {
         get
         {
             if (canControl)
             {
-                return Input.GetKeyDown(KeyCode.Space) || controlJump;
+                bool gamepadJump = false;
+                if (Gamepad.current != null)
+                {
+                    gamepadJump = Gamepad.current.buttonSouth.wasPressedThisFrame;
+                }
+                return Input.GetKeyDown(KeyCode.Space) || gamepadJump;
             }
             else
             {
@@ -79,7 +92,12 @@ public class PlayerInput : MonoBehaviour, IInput
         {
             if (canControl)
             {
-                return Input.GetKeyDown(KeyCode.LeftShift) || controlDash;
+                bool gamepadDash = false;
+                if (Gamepad.current != null)
+                {
+                    gamepadDash = Gamepad.current.buttonEast.wasPressedThisFrame;
+                }
+                return Input.GetKeyDown(KeyCode.LeftShift) || gamepadDash;
             }
             else
             {
@@ -88,24 +106,8 @@ public class PlayerInput : MonoBehaviour, IInput
         }
     }
 
-    private void LateUpdate()
-    {
-        controlJump = false;
-        controlDash = false;
-    }
-
     public void SetCanControl(bool state)
     {
         canControl = state;
-    }
-
-    private void OnEnable()
-    {
-        playerControls.FindActionMap("Gameplay").Enable();
-    }
-
-    private void OnDisable()
-    {
-        playerControls.FindActionMap("Gameplay").Disable();
     }
 }

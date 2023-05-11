@@ -57,7 +57,7 @@ MonoBehaviour:
   cameFrom: {fileID: 11400000, guid: 132dfe5cf6cf9584a9879cd80e20d2ed, type: 2}
   gameTime: {fileID: 11400000, guid: 688405d78f2d1234793894e35b1bd428, type: 2}
   lastRunTime: {fileID: 11400000, guid: fa95cf883d095b84dbfa311dcfaf4716, type: 2}
-  player: {fileID: 0}
+  player: {fileID: 11400000, guid: 5753d8dd94d987946b8f20223886df07, type: 2}
   thirdPersonCamera: {fileID: 0}
   respawn: {fileID: 11400000, guid: 8c7cff57632c8784591fbca69665810a, type: 2}
   hud: {fileID: 0}

@@ -5,8 +5,10 @@ using UnityEngine;
 public class PlayerEffects : MonoBehaviour
 {
     private Animator animator;
+    private IInput _input;
     [SerializeField] private BoolVariable isGrounded;
     [SerializeField] private BoolVariable isMoving;
+    private bool jumpDash;
     [SerializeField] private GameObject dashParticle;
     [SerializeField] private GameObject deathParticle;
     [SerializeField] private GameObject jumpParticle;
@@ -26,6 +28,7 @@ public class PlayerEffects : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
+        _input = GetComponentInParent<PlayerInput>();
     }
 
     private void Update()
@@ -48,7 +51,13 @@ public class PlayerEffects : MonoBehaviour
 
     public void Dash()
     {
-        Instantiate(dashParticle, transform.position, Quaternion.Euler(-90, transform.parent.eulerAngles.y, 0));
+        animator.SetTrigger("Dash");
+        jumpDash = true;
+        Vector3 vel = _input.direction.normalized;
+        Vector3 heading = vel - vel.y * Vector3.up;
+        float rotY = Mathf.Atan2(heading.z, -heading.x) * Mathf.Rad2Deg;
+        Debug.Log(heading);
+        Instantiate(dashParticle, transform.position, Quaternion.Euler(-90, rotY - 90, 0));
         Instantiate(dashSound, transform.position, transform.rotation);
     }
 
@@ -60,14 +69,31 @@ public class PlayerEffects : MonoBehaviour
     }
 
     public void Jump()
-    {        
-        animator.SetTrigger("Jump");
+    {
+        if (jumpDash)
+        {
+            jumpDash = false;
+            animator.SetTrigger("JumpDash");
+        }
+        else
+        {
+            animator.SetTrigger("Jump");
+        }
         Instantiate(jumpParticle, transform.position, jumpParticle.transform.rotation);
         Instantiate(jumpSound, transform.position, transform.rotation);
     }
 
     public void Land()
     {
+        if (isMoving.Value)
+        {
+            animator.Play("PlayerWalk");
+        }
+        else
+        {
+            animator.Play("PlayerIdle");
+        }
+        jumpDash = false;
         Instantiate(landParticle, transform.position, jumpParticle.transform.rotation);
         Instantiate(landSound, transform.position, transform.rotation);
     }
