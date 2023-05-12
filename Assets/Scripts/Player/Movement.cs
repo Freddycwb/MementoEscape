@@ -116,7 +116,6 @@ public class Movement : MonoBehaviour
         }
         if ((_input.jump && isGrounded.Value) || (_input.jump && !isGrounded.Value && canDoubleJump) || (_input.jump && !isGrounded.Value && canDashJump))
         {
-            Debug.Log(_input.jump);
             jump.Raise();
             if (!isGrounded.Value && canDoubleJump)
             {
