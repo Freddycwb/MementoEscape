@@ -89,7 +89,7 @@ public class PlayerInput : MonoBehaviour, IInput
                 bool gamepadDash = false;
                 if (Gamepad.current != null)
                 {
-                    gamepadDash = Gamepad.current.buttonEast.wasPressedThisFrame;
+                    gamepadDash = Gamepad.current.rightTrigger.wasPressedThisFrame;
                 }
                 return Input.GetKeyDown(KeyCode.LeftShift) || gamepadDash;
             }

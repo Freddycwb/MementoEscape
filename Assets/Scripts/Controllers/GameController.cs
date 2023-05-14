@@ -19,7 +19,7 @@ public class GameController : MonoBehaviour
     private Vector3 spawnPoint;
 
     public float timeToFinish;
-    private float scoreValue;
+    [SerializeField] private FloatVariable score;
 
     [SerializeField] private GameObject tutorial;
     [SerializeField] private Vector3 tutorialPlayerPos;
@@ -30,6 +30,7 @@ public class GameController : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         gameTime.Value = timeToFinish;
+        score.Value = 0;
 
         if (cameFrom.Value == "CutsceneTutorial" || cameFrom.Value == "")
         {
@@ -89,7 +90,7 @@ public class GameController : MonoBehaviour
 
     private void Score()
     {
-        canvas.scoreTMP.text = scoreValue.ToString();
+        canvas.scoreTMP.text = score.Value.ToString();
     }
 
     public void Death()
@@ -117,7 +118,7 @@ public class GameController : MonoBehaviour
 
     public void PickedPoint()
     {
-        scoreValue += 10;
+        score.Value += 10000;
     }
 
     public void Finish()

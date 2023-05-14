@@ -62,6 +62,7 @@ MonoBehaviour:
   canvas: {fileID: 0}
   respawn: {fileID: 11400000, guid: 8c7cff57632c8784591fbca69665810a, type: 2}
   timeToFinish: 300
+  score: {fileID: 11400000, guid: 713cd93833d35d442927c62dd5c330bd, type: 2}
   tutorial: {fileID: 4636120979807731282, guid: 4a2a15a741218b64a9dc7ef392772427, type: 3}
   tutorialPlayerPos: {x: -9, y: 0, z: -8}
   store: {fileID: 735343651769376023, guid: 70be3a9d9cbf9f74e9d1923b07e6b95a, type: 3}
