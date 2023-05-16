@@ -74,11 +74,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e656ea7c89b42234096f7ad72d0b7034, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveY: 1
-  moveX: 0
-  frequency: 5
-  magnitude: 0.1
-  offset: 0
+  rotation: 0
+  moveFromOrigin: 1
+  loop: 1
+  destiny:
+  - {x: 0, y: 0.2, z: 0}
+  - {x: 0, y: -0.2, z: 0}
+  timeToReachDestination:
+  - 0.5
+  - 0.5
+  delayAfterReachDestination: []
 --- !u!1 &8426396214351563866
 GameObject:
   m_ObjectHideFlags: 0
