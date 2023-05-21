@@ -12,5 +12,6 @@ public class Sound : MonoBehaviour
         source = GetComponent<AudioSource>();
         source.volume = PlayerPrefs.GetFloat("sfxVolume");
         source.clip = audios[Random.Range(0, audios.Length)];
+        source.enabled = true;
     }
 }

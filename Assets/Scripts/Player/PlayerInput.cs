@@ -19,6 +19,10 @@ public class PlayerInput : MonoBehaviour, IInput
             {
                 StickControl stick = Gamepad.current.leftStick;
                 gamepadMove = new Vector3(stick.right.value - stick.left.value, 0, stick.up.value - stick.down.value);
+                if (Mathf.Abs(gamepadMove.x + gamepadMove.y + gamepadMove.z) < 0.9f)
+                {
+                    gamepadMove = Vector3.zero;
+                }
             }
             Vector3 keyboardMove = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
             Vector3 move = keyboardMove + gamepadMove;
@@ -89,7 +93,7 @@ public class PlayerInput : MonoBehaviour, IInput
                 bool gamepadDash = false;
                 if (Gamepad.current != null)
                 {
-                    gamepadDash = Gamepad.current.rightTrigger.wasPressedThisFrame;
+                    gamepadDash = Gamepad.current.rightTrigger.wasPressedThisFrame || Gamepad.current.buttonEast.wasPressedThisFrame;
                 }
                 return Input.GetKeyDown(KeyCode.LeftShift) || gamepadDash;
             }

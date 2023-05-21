@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerEffects : MonoBehaviour
 {
+    private Vector3 lastPos;
     private Animator animator;
     private IInput _input;
     [SerializeField] private BoolVariable isGrounded;
@@ -29,10 +30,19 @@ public class PlayerEffects : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         _input = GetComponentInParent<PlayerInput>();
+        lastPos = new Vector3(transform.position.x, 0, transform.position.z);
     }
 
     private void Update()
     {
+        if ((lastPos - transform.position).x + (lastPos - transform.position).z != 0)
+        {
+            Vector3 relativePos = lastPos - new Vector3(transform.position.x, 0, transform.position.z); ;
+            Quaternion rotation = Quaternion.LookRotation(relativePos, Vector3.up);
+            transform.rotation = rotation;
+            lastPos = new Vector3(transform.position.x, 0, transform.position.z);
+        }
+
         animator.SetBool("IsGrounded", isGrounded.Value);
         animator.SetBool("IsMoving", isMoving.Value);
         if (isMoving.Value && isGrounded.Value && currentRunParticle == null)

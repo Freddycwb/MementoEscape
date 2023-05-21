@@ -73,13 +73,19 @@ public class MenuController : MonoBehaviour
     public void Play()
     {
         blackscreen.Play("Transition");
-        StartCoroutine("WaitForTransition");
+        StartCoroutine("WaitForTransition", "Cutscene");
     }
 
-    public IEnumerator WaitForTransition()
+    public void BackToMenu()
+    {
+        blackscreen.Play("Transition");
+        StartCoroutine("WaitForTransition", "Menu");
+    }
+
+    public IEnumerator WaitForTransition(string scene)
     {
         yield return new WaitForSeconds(0.4f);
-        SceneManager.LoadScene("Cutscene");
+        SceneManager.LoadScene(scene);
     }
 
     public void SaveName()
@@ -212,7 +218,7 @@ public class MenuController : MonoBehaviour
 
     private string GetGrade()
     {
-        string grade = "Eerrr";
+        string grade = "Slug";
         for (int i = 0; i < gradeTitles.Length; i++)
         {
             if (gradeScores[i] < lastRunTime.Value * 100 + lastRunScore.Value)

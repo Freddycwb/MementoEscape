@@ -26,6 +26,8 @@ public class GameController : MonoBehaviour
     [SerializeField] private GameObject store;
     [SerializeField] private Vector3 storePlayerPos;
 
+    [SerializeField] private Vector3[] tps;
+
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -38,7 +40,7 @@ public class GameController : MonoBehaviour
             player.transform.position = tutorialPlayerPos;
             canvas.hud.SetActive(false);
         }
-        else if (cameFrom.Value == "CutsceneSkipTutorial" || cameFrom.Value == "CutsceneTutorialEnd")
+        else
         {
             Instantiate(store);
             player.transform.position = storePlayerPos;
@@ -54,6 +56,27 @@ public class GameController : MonoBehaviour
             Timer();
         }
         Score();
+        Cheat();
+    }
+
+    private void Cheat()
+    {
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            player.transform.position = tps[0];
+        }
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            player.transform.position = tps[1];
+        }
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            player.transform.position = tps[2];
+        }
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            player.transform.position = tps[3];
+        }
     }
 
     private void Pause()
@@ -118,7 +141,7 @@ public class GameController : MonoBehaviour
 
     public void PickedPoint()
     {
-        score.Value += 10000;
+        score.Value += 100;
     }
 
     public void Finish()

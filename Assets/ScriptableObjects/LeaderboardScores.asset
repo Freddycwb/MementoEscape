@@ -13,9 +13,5 @@ MonoBehaviour:
   m_Name: LeaderboardScores
   m_EditorClassIdentifier: 
   DeveloperDescription: 
-  Value:
-  - 29721.61
-  - 3
-  - 2
-  - 1
+  Value: []
   PersistBetweenScenes: 1
