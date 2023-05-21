@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class PlayerEffects : MonoBehaviour
 {
+    private Vector3 lastPos;
     private Animator animator;
+    private IInput _input;
     [SerializeField] private BoolVariable isGrounded;
     [SerializeField] private BoolVariable isMoving;
+    private bool jumpDash;
     [SerializeField] private GameObject dashParticle;
     [SerializeField] private GameObject deathParticle;
     [SerializeField] private GameObject jumpParticle;
@@ -26,10 +29,20 @@ public class PlayerEffects : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
+        _input = GetComponentInParent<PlayerInput>();
+        lastPos = new Vector3(transform.position.x, 0, transform.position.z);
     }
 
     private void Update()
     {
+        if ((lastPos - transform.position).x + (lastPos - transform.position).z != 0)
+        {
+            Vector3 relativePos = lastPos - new Vector3(transform.position.x, 0, transform.position.z); ;
+            Quaternion rotation = Quaternion.LookRotation(relativePos, Vector3.up);
+            transform.rotation = rotation;
+            lastPos = new Vector3(transform.position.x, 0, transform.position.z);
+        }
+
         animator.SetBool("IsGrounded", isGrounded.Value);
         animator.SetBool("IsMoving", isMoving.Value);
         if (isMoving.Value && isGrounded.Value && currentRunParticle == null)
@@ -48,7 +61,12 @@ public class PlayerEffects : MonoBehaviour
 
     public void Dash()
     {
-        Instantiate(dashParticle, transform.position, Quaternion.Euler(-90, transform.parent.eulerAngles.y, 0));
+        animator.SetTrigger("Dash");
+        jumpDash = true;
+        Vector3 vel = _input.direction.normalized;
+        Vector3 heading = vel - vel.y * Vector3.up;
+        float rotY = Mathf.Atan2(heading.z, -heading.x) * Mathf.Rad2Deg;
+        Instantiate(dashParticle, transform.position, Quaternion.Euler(-90, rotY - 90, 0));
         Instantiate(dashSound, transform.position, transform.rotation);
     }
 
@@ -60,14 +78,31 @@ public class PlayerEffects : MonoBehaviour
     }
 
     public void Jump()
-    {        
-        animator.SetTrigger("Jump");
+    {
+        if (jumpDash)
+        {
+            jumpDash = false;
+            animator.SetTrigger("JumpDash");
+        }
+        else
+        {
+            animator.SetTrigger("Jump");
+        }
         Instantiate(jumpParticle, transform.position, jumpParticle.transform.rotation);
         Instantiate(jumpSound, transform.position, transform.rotation);
     }
 
     public void Land()
     {
+        if (isMoving.Value)
+        {
+            animator.Play("PlayerWalk");
+        }
+        else
+        {
+            animator.Play("PlayerIdle");
+        }
+        jumpDash = false;
         Instantiate(landParticle, transform.position, jumpParticle.transform.rotation);
         Instantiate(landSound, transform.position, transform.rotation);
     }
