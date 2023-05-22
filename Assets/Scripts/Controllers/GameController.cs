@@ -83,6 +83,7 @@ public class GameController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+
             canvas.pauseMenu.SetActive(!canvas.pauseMenu.activeSelf);
             player.GetComponent<PlayerInput>().SetCanControl(!canvas.pauseMenu.activeSelf);
             thirdPersonCamera.GetComponentInChildren<CinemachineFreeLook>().enabled = !canvas.pauseMenu.activeSelf;
@@ -94,6 +95,7 @@ public class GameController : MonoBehaviour
             {
                 Cursor.lockState = CursorLockMode.Locked;
             }
+            Time.timeScale = !canvas.pauseMenu.activeSelf ? 1f : 0f;
         }
     }
 
