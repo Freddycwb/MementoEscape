@@ -65,8 +65,13 @@ MonoBehaviour:
   score: {fileID: 11400000, guid: 713cd93833d35d442927c62dd5c330bd, type: 2}
   tutorial: {fileID: 4636120979807731282, guid: 4a2a15a741218b64a9dc7ef392772427, type: 3}
   tutorialPlayerPos: {x: -9, y: 0, z: -8}
-  store: {fileID: 735343651769376023, guid: 70be3a9d9cbf9f74e9d1923b07e6b95a, type: 3}
-  storePlayerPos: {x: 0, y: 0, z: 0}
+  store: {fileID: 1287047607307017686, guid: 41f9fd79e1ae99841b85917334f8899f, type: 3}
+  storePlayerPos: {x: 1, y: 0, z: -4}
+  tps:
+  - {x: 1, y: 2, z: 57}
+  - {x: -35, y: 17, z: 57}
+  - {x: -35, y: 17, z: -5}
+  - {x: 19, y: 29, z: -30}
 --- !u!114 &3807437708437859325
 MonoBehaviour:
   m_ObjectHideFlags: 0

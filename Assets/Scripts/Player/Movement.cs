@@ -41,6 +41,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private float dashJumpForce;
     private bool canDash;
     private bool canDashJump;
+    private bool dashJumping;
     
     [SerializeField] private bool cameraYRotate;
 
@@ -122,6 +123,7 @@ public class Movement : MonoBehaviour
             canDoubleJump = true;
             canDash = true;
             canDashJump = false;
+            dashJumping = false;
         }
 
         jumpPressedRemember -= Time.deltaTime;
@@ -155,6 +157,7 @@ public class Movement : MonoBehaviour
                 {
                     rb.velocity = new Vector3(rb.velocity.x, dashJumpForce, rb.velocity.z);
                     canDashJump = false;
+                    dashJumping = true;
                 }
                 holdJump = holdJumpTime;
                 jumpPressedRemember = 0;
@@ -164,7 +167,7 @@ public class Movement : MonoBehaviour
             {
                 if (holdJump > 0)
                 {
-                    if (!canDashJump)
+                    if (!dashJumping)
                     {
                         rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
                     }

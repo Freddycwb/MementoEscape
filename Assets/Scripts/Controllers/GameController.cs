@@ -51,7 +51,7 @@ public class GameController : MonoBehaviour
     private void Update()
     {
         Pause();
-        if (cameFrom.Value == "CutsceneSkipTutorial" || cameFrom.Value == "CutsceneTutorialEnd")
+        if (cameFrom.Value != "CutsceneTutorial")
         {
             Timer();
         }
@@ -106,6 +106,7 @@ public class GameController : MonoBehaviour
         }
         else
         {
+            canvas.timerSlider.value = timeToFinish / gameTime.Value;
             canvas.timerTMP.text = (Mathf.Floor(timeToFinish / 60)).ToString() + ":" + ((int)timeToFinish % 60).ToString("d2");
             timeToFinish -= Time.deltaTime;
         }
