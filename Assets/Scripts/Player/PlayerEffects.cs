@@ -7,6 +7,8 @@ public class PlayerEffects : MonoBehaviour
     private Vector3 lastPos;
     private Animator animator;
     private IInput _input;
+    [SerializeField] private float groundedRememberTime;
+    private float groundedRemember;
     [SerializeField] private BoolVariable isGrounded;
     [SerializeField] private BoolVariable isMoving;
     private bool jumpDash;
@@ -43,7 +45,12 @@ public class PlayerEffects : MonoBehaviour
             lastPos = new Vector3(transform.position.x, 0, transform.position.z);
         }
 
-        animator.SetBool("IsGrounded", isGrounded.Value);
+        groundedRemember -= Time.deltaTime;
+        if (isGrounded.Value)
+        {
+            groundedRemember = groundedRememberTime;
+        }
+        animator.SetBool("IsGrounded", (groundedRemember > 0));
         animator.SetBool("IsMoving", isMoving.Value);
         if (isMoving.Value && isGrounded.Value && currentRunParticle == null)
         {

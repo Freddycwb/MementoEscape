@@ -73,9 +73,9 @@ public class PlayerInput : MonoBehaviour, IInput
                 bool gamepadJump = false;
                 if (Gamepad.current != null)
                 {
-                    gamepadJump = Gamepad.current.buttonSouth.wasPressedThisFrame;
+                    gamepadJump = Gamepad.current.buttonSouth.isPressed;
                 }
-                return Input.GetKeyDown(KeyCode.Space) || gamepadJump;
+                return Input.GetKey(KeyCode.Space) || gamepadJump;
             }
             else
             {

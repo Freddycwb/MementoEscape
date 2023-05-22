@@ -24,6 +24,13 @@ public class Movement : MonoBehaviour
     [SerializeField] private float gravityScale;
     private float globalGravity = -9.81f;
 
+    [SerializeField] private float holdJumpTime;
+    private float holdJump;
+    [SerializeField] private float jumpPressedRememberTime;
+    private float jumpPressedRemember;
+    [SerializeField] private float groundedRememberTime;
+    private float groundedRemember;
+    private bool justJumped;
     [SerializeField] private float jumpForce;
     private bool canDoubleJump;
 
@@ -97,7 +104,7 @@ public class Movement : MonoBehaviour
         neededAccel -= Vector3.up * neededAccel.y;
         neededAccel = Vector3.ClampMagnitude(neededAccel, maxAccel);
         rb.AddForce(neededAccel, ForceMode.Impulse);
-        isMoving.Value = Mathf.Abs(rb.velocity.x + rb.velocity.z) > 0;
+        isMoving.Value = Mathf.Abs(rb.velocity.x + rb.velocity.z) > 0.2f;
     }
 
     void Jump()
@@ -108,29 +115,65 @@ public class Movement : MonoBehaviour
             land.Raise();
         }
         isGrounded.Value = grounds.Length > 0;
-        if (isGrounded.Value)
+        groundedRemember -= Time.deltaTime;
+        if (isGrounded.Value && !justJumped)
         {
+            groundedRemember = groundedRememberTime;
             canDoubleJump = true;
             canDash = true;
             canDashJump = false;
         }
-        if ((_input.jump && isGrounded.Value) || (_input.jump && !isGrounded.Value && canDoubleJump) || (_input.jump && !isGrounded.Value && canDashJump))
+
+        jumpPressedRemember -= Time.deltaTime;
+        if (_input.jump)
         {
-            jump.Raise();
-            if (!isGrounded.Value && canDoubleJump)
+            jumpPressedRemember = jumpPressedRememberTime;
+        }
+        else
+        {
+            justJumped = false;
+        }
+        if (!_input.jump && isGrounded.Value)
+        {
+            jumpPressedRemember = 0;
+        }
+        if ((_input.jump && justJumped) || (((jumpPressedRemember > 0) && (groundedRemember > 0)) || (_input.jump && !(groundedRemember > 0) && canDoubleJump) || (_input.jump && !(groundedRemember > 0) && canDashJump)))
+        {
+            if (!justJumped)
             {
-                canDoubleJump = false;
-            }
-            if (!canDashJump)
-            {
-                rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
-                rb.AddForce(new Vector3(0, jumpForce, 0), ForceMode.Impulse);
+                jump.Raise();
+                justJumped = true;
+                if (!(groundedRemember > 0) && canDoubleJump)
+                {
+                    canDoubleJump = false;
+                }
+                if (!canDashJump)
+                {
+                    rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
+                }
+                else
+                {
+                    rb.velocity = new Vector3(rb.velocity.x, dashJumpForce, rb.velocity.z);
+                    canDashJump = false;
+                }
+                holdJump = holdJumpTime;
+                jumpPressedRemember = 0;
+                groundedRemember = 0;
             }
             else
             {
-                rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
-                rb.AddForce(new Vector3(0, dashJumpForce, 0), ForceMode.Impulse);
-                canDashJump = false;
+                if (holdJump > 0)
+                {
+                    if (!canDashJump)
+                    {
+                        rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
+                    }
+                    else
+                    {
+                        rb.velocity = new Vector3(rb.velocity.x, dashJumpForce, rb.velocity.z);
+                    }
+                    holdJump -= Time.deltaTime;
+                }
             }
         }
     }
