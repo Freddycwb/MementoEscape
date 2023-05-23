@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class CutsceneController : MonoBehaviour
@@ -12,6 +13,7 @@ public class CutsceneController : MonoBehaviour
     [SerializeField] private Animator blackscreen;
     private string playingCutscene;
     private float skipCutsceneCount;
+    private bool gamepadActionDone;
 
     private void Start()
     {
@@ -32,7 +34,25 @@ public class CutsceneController : MonoBehaviour
 
     private void Update()
     {
+        if (!gamepadActionDone && cameFrom.Value != "CutsceneTutorialEnd" && Gamepad.current != null)
+        {
+            GamepadControls();
+        }
         HoldAnyButton();
+    }
+
+    private void GamepadControls()
+    {
+        if (Gamepad.current.buttonSouth.wasPressedThisFrame)
+        {
+            PlayTutorial();
+            gamepadActionDone = true;
+        }
+        if (Gamepad.current.buttonEast.wasPressedThisFrame)
+        {
+            SkipTutorial();
+            gamepadActionDone = true;
+        }
     }
 
     private void HoldAnyButton()

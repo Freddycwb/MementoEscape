@@ -2663,7 +2663,7 @@ MonoBehaviour:
   blackscreen: {fileID: 1627589064}
   mainBackground: {fileID: 21300000, guid: 3d87e4ee90688554e8c464a7a485cc7a, type: 3}
   gameoverBackground: {fileID: 21300000, guid: b631a08431334424990db3075a17ef37, type: 3}
-  victoryBackground: {fileID: 21300000, guid: 124622a8f605db14f8ce61d6f095f434, type: 3}
+  victoryBackground: {fileID: 21300000, guid: 58999d9064446cd4ea8b5b8359862a4b, type: 3}
   names: {fileID: 11400000, guid: ef116b1b886046e4cbc2b77af361171f, type: 2}
   scores: {fileID: 11400000, guid: eea41ac184b32764f88449d28cd50ebb, type: 2}
   times: {fileID: 11400000, guid: f029f25cd20dfa84587832a72e236a9a, type: 2}
@@ -2677,6 +2677,8 @@ MonoBehaviour:
   gradeSound: {fileID: 2061726633}
   nameField: {fileID: 1355378148}
   scrollViewContent: {fileID: 1455986730}
+  options: {fileID: 2083257991}
+  nameCatcher: {fileID: 1230998533}
   gradeScores:
   - 20000
   - 15000
@@ -3729,6 +3731,18 @@ PrefabInstance:
     - target: {fileID: 2820729179924283140, guid: 2be324a4092276b43972aab548f13d28, type: 3}
       propertyPath: m_SizeDelta.y
       value: 460
+      objectReference: {fileID: 0}
+    - target: {fileID: 2820729179924283140, guid: 2be324a4092276b43972aab548f13d28, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.99999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 2820729179924283140, guid: 2be324a4092276b43972aab548f13d28, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.99999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 2820729179924283140, guid: 2be324a4092276b43972aab548f13d28, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.99999994
       objectReference: {fileID: 0}
     - target: {fileID: 2820729179924283140, guid: 2be324a4092276b43972aab548f13d28, type: 3}
       propertyPath: m_LocalPosition.x

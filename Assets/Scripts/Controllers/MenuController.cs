@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.InputSystem;
 using Unity.VisualScripting;
 
 public class MenuController : MonoBehaviour
@@ -39,11 +40,15 @@ public class MenuController : MonoBehaviour
     [SerializeField] private GameObject gradeSound;
     [SerializeField] private TMP_InputField nameField;
     [SerializeField] private GameObject scrollViewContent;
+    [SerializeField] private ObjectMovement options;
+    [SerializeField] private GameObject nameCatcher;
     [SerializeField] private float[] gradeScores;
     [SerializeField] private string[] gradeTitles;
     [SerializeField] private float scrollSpeed;
     private bool scrollingDown;
     private bool scrollCanGo = true;
+    private bool gamepadActionDone;
+    private bool savingName;
 
     private void Start()
     {
@@ -61,6 +66,7 @@ public class MenuController : MonoBehaviour
             main.SetActive(false);
             victory.SetActive(true);
             StartCoroutine("IncreaseScore");
+            savingName = true;
             cameFrom.Value = "MenuVictory";
         }
         else
@@ -106,6 +112,7 @@ public class MenuController : MonoBehaviour
         }
         OrganizeLeaderboard();
         CreateLeaderboard();
+        savingName = false;
     }
 
     private void OrganizeLeaderboard()
@@ -179,7 +186,28 @@ public class MenuController : MonoBehaviour
         {
             AutoScroll();
         }
+        if (!gamepadActionDone && Gamepad.current != null)
+        {
+            GamepadControls();
+        }
     }
+
+    private void GamepadControls()
+    {
+        if (Gamepad.current.buttonSouth.wasPressedThisFrame && !savingName)
+        {
+            Play();
+            gamepadActionDone = true;
+        }
+        if (Gamepad.current.buttonSouth.wasPressedThisFrame && savingName)
+        {
+            SaveName();
+            ShowLeaderboard();
+            scrollViewContent.transform.parent.parent.parent.GetComponent<ObjectMovement>().enabled = true;
+            options.enabled = true;
+            nameCatcher.SetActive(false);
+        }
+    } 
 
     public void ShowLeaderboard()
     {
