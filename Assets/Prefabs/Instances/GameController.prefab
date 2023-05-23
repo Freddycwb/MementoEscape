@@ -67,6 +67,7 @@ MonoBehaviour:
   tutorialPlayerPos: {x: -9, y: 0, z: -8}
   store: {fileID: 1287047607307017686, guid: 41f9fd79e1ae99841b85917334f8899f, type: 3}
   storePlayerPos: {x: 1, y: 0, z: -4}
+  camAnim: {fileID: 0}
   tps:
   - {x: 1, y: 2, z: 57}
   - {x: -35, y: 17, z: 57}
