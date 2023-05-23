@@ -221,7 +221,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7595928195858775498}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WoodenBox2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -265,6 +265,11 @@ Transform:
   - {fileID: 8244661587629948840}
   - {fileID: 2609324576428359878}
   - {fileID: 7928413704768057872}
+  - {fileID: 6545785516981550135}
+  - {fileID: 2186905636575123736}
+  - {fileID: 6467155861346667060}
+  - {fileID: 5880490316295262186}
+  - {fileID: 446017284377006339}
   m_Father: {fileID: 4636120979807731285}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1360,7 +1365,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4636120980432556322}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1708,7 +1713,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3654434698936343454}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WoodenBox1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1749,6 +1754,8 @@ Transform:
   - {fileID: 8366126680129749102}
   - {fileID: 7557902191807333136}
   - {fileID: 1215573440241503098}
+  - {fileID: 856697400416099676}
+  - {fileID: 4345444156231426574}
   m_Father: {fileID: 4636120979807731285}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1761,7 +1768,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5480437295712260361}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: StorageShelf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1793,7 +1800,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1680312349021792397}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: pallets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1981,6 +1988,94 @@ Transform:
   m_Father: {fileID: 4636120979807731285}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &124459382322018024
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7595928195858775498}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_RootOrder
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.67
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.05
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 07789d24039ef024fb6d0d58200bd130, type: 2}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Name
+      value: WoodenBox2 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+--- !u!4 &446017284377006339 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+  m_PrefabInstance: {fileID: 124459382322018024}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &971443777485507513 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+  m_PrefabInstance: {fileID: 124459382322018024}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &6734166346285354540
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971443777485507513}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.049999993, y: 0.04999999, z: 0.049999993}
+  m_Center: {x: 0.000000016763806, y: 0.0012997434, z: 0.024999974}
 --- !u!1001 &141258768522816049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2600,6 +2695,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenBox1 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
 --- !u!4 &189541314625632164 stripped
@@ -3152,6 +3251,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenBox1 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
 --- !u!1 &324423126273873660 stripped
@@ -3542,6 +3645,94 @@ BoxCollider:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9dfee10c0ba87934c992af17f930d99c, type: 3}
   m_PrefabInstance: {fileID: 892954047530624930}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &894282020106025655
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3654434698936343454}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.64
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.02
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 07789d24039ef024fb6d0d58200bd130, type: 2}
+    - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_Name
+      value: WoodenBox1 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+--- !u!1 &47368145219684326 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+  m_PrefabInstance: {fileID: 894282020106025655}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2415384616229013636
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47368145219684326}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.049999997, y: 0.04999999, z: 0.05}
+  m_Center: {x: 0.0000000121071935, y: 0.0012997434, z: 0.024999978}
+--- !u!4 &856697400416099676 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+  m_PrefabInstance: {fileID: 894282020106025655}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &895353403485806201
 PrefabInstance:
@@ -4068,6 +4259,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenBox1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
 --- !u!1 &149817446361411258 stripped
@@ -4526,6 +4721,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenBox2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
 --- !u!4 &1606718933355925845 stripped
@@ -4591,6 +4790,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
       propertyPath: m_Name
       value: WoodenBox1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
@@ -5278,6 +5481,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenBox1 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
 --- !u!4 &1215573440241503098 stripped
@@ -5608,6 +5815,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenBox1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
 --- !u!4 &2210049033923666524 stripped
@@ -5674,6 +5885,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenBox2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
 --- !u!1 &1543886775296841157 stripped
@@ -5698,6 +5913,94 @@ BoxCollider:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
   m_PrefabInstance: {fileID: 1850298876984092820}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1861053634224160499
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7595928195858775498}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.59
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.98
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 07789d24039ef024fb6d0d58200bd130, type: 2}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Name
+      value: WoodenBox2 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+--- !u!1 &1518456045312951202 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+  m_PrefabInstance: {fileID: 1861053634224160499}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &4928814450800466258
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518456045312951202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.049999993, y: 0.04999999, z: 0.049999993}
+  m_Center: {x: 0.000000016763806, y: 0.0012997434, z: 0.024999974}
+--- !u!4 &2186905636575123736 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+  m_PrefabInstance: {fileID: 1861053634224160499}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1898135072155356745
 PrefabInstance:
@@ -5769,6 +6072,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
       propertyPath: m_Name
       value: WoodenBox1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
@@ -6132,6 +6439,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenBox1 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
 --- !u!4 &1986017738441545598 stripped
@@ -6368,6 +6679,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenBox1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
 --- !u!1 &1349828474732567384 stripped
@@ -6559,6 +6874,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
       propertyPath: m_Name
       value: WoodenBox2 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
@@ -6908,6 +7227,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenBox2 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
 --- !u!4 &2609324576428359878 stripped
@@ -7022,7 +7345,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9dfee10c0ba87934c992af17f930d99c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.07
+      value: -9.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9dfee10c0ba87934c992af17f930d99c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7150,6 +7473,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenBox2 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
 --- !u!4 &2386228973674790209 stripped
@@ -7245,6 +7572,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
       propertyPath: m_Name
       value: WoodenBox2 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
@@ -7494,6 +7825,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenBox2 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
 --- !u!1 &2849979384370745945 stripped
@@ -7714,7 +8049,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 35d329fa96ff4ce4ebab67833cff6860, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.51
+      value: -6.586
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 35d329fa96ff4ce4ebab67833cff6860, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7860,6 +8195,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenBox2 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
 --- !u!1 &2327047042816990611 stripped
@@ -7952,6 +8291,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StorageShelf
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 12453b66484ca0543a21739eaad88c03, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12453b66484ca0543a21739eaad88c03, type: 3}
 --- !u!4 &2919838141535649577 stripped
@@ -8021,6 +8364,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ea4e145ceb4b8ff439063fa49feb91f1, type: 3}
       propertyPath: m_Name
       value: pallet
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ea4e145ceb4b8ff439063fa49feb91f1, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea4e145ceb4b8ff439063fa49feb91f1, type: 3}
@@ -8369,6 +8716,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
       propertyPath: m_Name
       value: WoodenBox1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
@@ -9806,6 +10157,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenBox1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
 --- !u!4 &4549016780058513241 stripped
@@ -9991,6 +10346,94 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 35d329fa96ff4ce4ebab67833cff6860, type: 3}
   m_PrefabInstance: {fileID: 4266753060553037275}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4306750842205488613
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3654434698936343454}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.72
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.02
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.04
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 07789d24039ef024fb6d0d58200bd130, type: 2}
+    - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_Name
+      value: WoodenBox1 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+--- !u!1 &3964802384987224244 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+  m_PrefabInstance: {fileID: 4306750842205488613}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &443180998139013385
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3964802384987224244}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.049999997, y: 0.04999999, z: 0.05}
+  m_Center: {x: 0.0000000121071935, y: 0.0012997434, z: 0.024999978}
+--- !u!4 &4345444156231426574 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+  m_PrefabInstance: {fileID: 4306750842205488613}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4319133564823944666
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10049,6 +10492,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
       propertyPath: m_Name
       value: WoodenBox2 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
@@ -10515,6 +10962,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
       propertyPath: m_Name
       value: WoodenBox2 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
@@ -11115,6 +11566,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
       propertyPath: m_Name
       value: WoodenBox1 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
@@ -11898,6 +12353,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenBox2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
 --- !u!4 &4650430980058976967 stripped
@@ -12390,6 +12849,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenBox1 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
 --- !u!1 &5069746251824468713 stripped
@@ -12770,6 +13233,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenBox1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
 --- !u!4 &5505063588577857310 stripped
@@ -13107,6 +13574,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
       propertyPath: m_Name
       value: WoodenBox1 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
@@ -13467,6 +13938,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
       propertyPath: m_Name
       value: WoodenBox2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
@@ -14459,6 +14934,94 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 35d329fa96ff4ce4ebab67833cff6860, type: 3}
   m_PrefabInstance: {fileID: 6189367608222651631}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6201751030281676801
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7595928195858775498}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_RootOrder
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.59
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.98
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 07789d24039ef024fb6d0d58200bd130, type: 2}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Name
+      value: WoodenBox2 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+--- !u!4 &5880490316295262186 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+  m_PrefabInstance: {fileID: 6201751030281676801}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6543838447945586000 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+  m_PrefabInstance: {fileID: 6201751030281676801}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &7118023697799735983
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6543838447945586000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.049999993, y: 0.04999999, z: 0.049999993}
+  m_Center: {x: 0.000000016763806, y: 0.0012997434, z: 0.024999974}
 --- !u!1001 &6255955453320585909
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14625,6 +15188,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
       propertyPath: m_Name
       value: WoodenBox2 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
@@ -14878,6 +15445,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenBox2 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
 --- !u!1 &6248582096725432295 stripped
@@ -15052,6 +15623,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenBox2 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
 --- !u!1 &6287888781335793482 stripped
@@ -15155,6 +15730,182 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 35d329fa96ff4ce4ebab67833cff6860, type: 3}
   m_PrefabInstance: {fileID: 6603238154322426336}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6727801984229415900
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7595928195858775498}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_RootOrder
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.97
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.91
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 07789d24039ef024fb6d0d58200bd130, type: 2}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Name
+      value: WoodenBox2 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+--- !u!1 &5880748471230965389 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+  m_PrefabInstance: {fileID: 6727801984229415900}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2757226343319568726
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5880748471230965389}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.049999993, y: 0.04999999, z: 0.049999993}
+  m_Center: {x: 0.000000016763806, y: 0.0012997434, z: 0.024999974}
+--- !u!4 &6545785516981550135 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+  m_PrefabInstance: {fileID: 6727801984229415900}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6788413929901665759
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7595928195858775498}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_RootOrder
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.95
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 07789d24039ef024fb6d0d58200bd130, type: 2}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Name
+      value: WoodenBox2 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+--- !u!1 &5977441437637611662 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+  m_PrefabInstance: {fileID: 6788413929901665759}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &6723600328842456131
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5977441437637611662}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.049999993, y: 0.04999999, z: 0.049999993}
+  m_Center: {x: 0.000000016763806, y: 0.0012997434, z: 0.024999974}
+--- !u!4 &6467155861346667060 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+  m_PrefabInstance: {fileID: 6788413929901665759}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6837688041143238401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15225,6 +15976,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
       propertyPath: m_Name
       value: WoodenBox1 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
@@ -15751,6 +16506,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
       propertyPath: m_Name
       value: WoodenBox2 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
@@ -16340,6 +17099,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenBox2 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
 --- !u!4 &6925442839779314648 stripped
@@ -16493,6 +17256,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
       propertyPath: m_Name
       value: WoodenBox1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
@@ -16686,6 +17453,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenBox2 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
 --- !u!4 &7928413704768057872 stripped
@@ -16841,6 +17612,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
       propertyPath: m_Name
       value: WoodenBox2 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
@@ -17115,6 +17890,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
       propertyPath: m_Name
       value: WoodenBox2 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
@@ -17520,6 +18299,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenBox1 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
 --- !u!4 &7557902191807333136 stripped
@@ -17693,6 +18476,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
       propertyPath: m_Name
       value: WoodenBox1 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
@@ -17968,6 +18755,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenBox1 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
 --- !u!4 &8554582413797368505 stripped
@@ -18224,6 +19015,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenBox2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
 --- !u!4 &8499144825148847142 stripped
@@ -18457,6 +19252,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
       propertyPath: m_Name
       value: WoodenBox1 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
@@ -18814,6 +19613,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenBox2 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
 --- !u!4 &8244661587629948840 stripped
@@ -18892,6 +19695,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenBox2 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
 --- !u!4 &8185255224947821616 stripped
@@ -18920,7 +19727,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 35d329fa96ff4ce4ebab67833cff6860, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.53
+      value: -7.608
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 35d329fa96ff4ce4ebab67833cff6860, type: 3}
       propertyPath: m_LocalPosition.y
@@ -19644,6 +20451,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenBox2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
 --- !u!1 &8536988373443480777 stripped
@@ -19977,6 +20788,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
       propertyPath: m_Name
       value: WoodenBox1 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e79aece4727e1c438ebbabdb8b26a24, type: 3}
@@ -20395,6 +21210,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
       propertyPath: m_Name
       value: WoodenBox2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f777fa2fd7ae884c9e3982b7ab0a087, type: 3}
