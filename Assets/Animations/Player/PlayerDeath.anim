@@ -254,13 +254,6 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -856332094, guid: eb9e2f48f4e03a54f9be034891a64cf4, type: 3}
-    attribute: m_Sprite
-    path: Ev_Body
-    classID: 212
-    script: {fileID: 0}
-  - curve:
-    - time: 0
       value: {fileID: 0}
     attribute: m_Sprite
     path: Ev_Body/Ev_Glass
@@ -337,13 +330,6 @@ AnimationClip:
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 3065596150
-      attribute: 0
-      script: {fileID: 0}
-      typeID: 212
-      customType: 23
-      isPPtrCurve: 1
-    - serializedVersion: 2
       path: 3516806259
       attribute: 0
       script: {fileID: 0}
@@ -351,7 +337,6 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -856332094, guid: eb9e2f48f4e03a54f9be034891a64cf4, type: 3}
     - {fileID: 0}
   m_AnimationClipSettings:
     serializedVersion: 2
