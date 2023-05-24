@@ -259,6 +259,15 @@ AnimationClip:
     path: Ev_Body/Ev_Glass
     classID: 212
     script: {fileID: 0}
+  - curve:
+    - time: 0
+      value: {fileID: 1867498092, guid: c73668c03ef565047bfffa77cb6e157f, type: 3}
+    - time: 0.016666668
+      value: {fileID: -1680984770, guid: 1adcd22328191c14c906888aaf50d8e9, type: 3}
+    attribute: m_Sprite
+    path: Ev_Body
+    classID: 212
+    script: {fileID: 0}
   m_SampleRate: 60
   m_WrapMode: 0
   m_Bounds:
@@ -336,8 +345,17 @@ AnimationClip:
       typeID: 212
       customType: 23
       isPPtrCurve: 1
+    - serializedVersion: 2
+      path: 3065596150
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
     pptrCurveMapping:
     - {fileID: 0}
+    - {fileID: 1867498092, guid: c73668c03ef565047bfffa77cb6e157f, type: 3}
+    - {fileID: -1680984770, guid: 1adcd22328191c14c906888aaf50d8e9, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
