@@ -105,7 +105,7 @@ public class Movement : MonoBehaviour
         neededAccel -= Vector3.up * neededAccel.y;
         neededAccel = Vector3.ClampMagnitude(neededAccel, maxAccel);
         rb.AddForce(neededAccel, ForceMode.Impulse);
-        isMoving.Value = Mathf.Abs(rb.velocity.x + rb.velocity.z) > 0.2f;
+        isMoving.Value = Mathf.Abs(rb.velocity.x + rb.velocity.z) > 0.1f;
     }
 
     void Jump()

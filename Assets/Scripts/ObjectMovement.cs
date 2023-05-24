@@ -15,7 +15,8 @@ public class ObjectMovement : MonoBehaviour
     [SerializeField] private float[] timeToReachDestination;
     [SerializeField] private float[] delayAfterReachDestination;
 
-    private void Start()
+
+    private void OnEnable()
     {
         start = rotation ? transform.eulerAngles : transform.position;
         current = start;
@@ -43,6 +44,21 @@ public class ObjectMovement : MonoBehaviour
             }
             yield return new WaitForEndOfFrame();
         }
+        if (rotation)
+        {
+            transform.rotation = Quaternion.Euler(destiny[destination]);
+        }
+        else
+        {
+            if (moveFromOrigin)
+            {
+                transform.position = start + destiny[destination];
+            }
+            else
+            {
+                transform.position = destiny[destination];
+            }
+        }
 
         if (delayAfterReachDestination.Length > destination)
         {
@@ -59,5 +75,20 @@ public class ObjectMovement : MonoBehaviour
         {
             StartCoroutine("Move");
         }
+    }
+
+    public void BackToStartPosition()
+    {
+        if (start != Vector3.zero)
+        {
+            transform.position = start;
+        }
+        enabled = false;
+        destination = 0;
+    }
+
+    private void OnDisable()
+    {
+        StopCoroutine("Move");
     }
 }

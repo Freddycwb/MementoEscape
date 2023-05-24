@@ -8,6 +8,7 @@ using Cinemachine;
 
 public class GameController : MonoBehaviour
 {
+    [SerializeField] private bool test;
     [SerializeField] private StringVariable cameFrom;
     [SerializeField] private FloatVariable gameTime;
     [SerializeField] private FloatVariable lastRunTime;
@@ -35,23 +36,31 @@ public class GameController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         gameTime.Value = timeToFinish;
         score.Value = 0;
-        canvas.hud.SetActive(false);
-        player.GetComponent<PlayerInput>().SetCanControl(false);
 
-        if (cameFrom.Value == "CutsceneTutorial" || cameFrom.Value == "")
+        if (!test)
         {
-            Instantiate(tutorial);
-            player.transform.position = tutorialPlayerPos;
-            camAnim.Play("ShowTutorialExit");
-            StartCoroutine("EnablePlayer", 5);
+            canvas.hud.SetActive(false);
+            if (cameFrom.Value == "CutsceneTutorial" || cameFrom.Value == "")
+            {
+                Instantiate(tutorial);
+                player.transform.position = tutorialPlayerPos;
+                camAnim.Play("ShowTutorialExit");
+                StartCoroutine("EnablePlayer", 5);
+            }
+            else
+            {
+                Instantiate(store);
+                player.transform.position = storePlayerPos;
+                camAnim.Play("ShowStoreExit");
+                StartCoroutine("EnablePlayer", 12);
+            }
+            player.GetComponent<PlayerInput>().SetCanControl(false);
         }
         else
         {
-            Instantiate(store);
-            player.transform.position = storePlayerPos;
-            camAnim.Play("ShowStoreExit");
-            StartCoroutine("EnablePlayer", 12);
+            startTimer = true;
         }
+
         spawnPoint = player.transform.position;
     }
 
