@@ -25,7 +25,9 @@ public class GameController : MonoBehaviour
     [SerializeField] private Vector3 tutorialPlayerPos;
     [SerializeField] private GameObject store;
     [SerializeField] private Vector3 storePlayerPos;
+    [SerializeField] private Animator camAnim;
 
+    [SerializeField] private bool startTimer;
     [SerializeField] private Vector3[] tps;
 
     private void Start()
@@ -33,25 +35,41 @@ public class GameController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         gameTime.Value = timeToFinish;
         score.Value = 0;
+        canvas.hud.SetActive(false);
+        player.GetComponent<PlayerInput>().SetCanControl(false);
 
         if (cameFrom.Value == "CutsceneTutorial" || cameFrom.Value == "")
         {
             Instantiate(tutorial);
             player.transform.position = tutorialPlayerPos;
-            canvas.hud.SetActive(false);
+            camAnim.Play("ShowTutorialExit");
+            StartCoroutine("EnablePlayer", 5);
         }
         else
         {
             Instantiate(store);
             player.transform.position = storePlayerPos;
+            camAnim.Play("ShowStoreExit");
+            StartCoroutine("EnablePlayer", 12);
         }
         spawnPoint = player.transform.position;
+    }
+
+    private IEnumerator EnablePlayer(float time)
+    {
+        yield return new WaitForSeconds(time);
+        player.GetComponent<PlayerInput>().SetCanControl(true);
+        if (cameFrom.Value != "CutsceneTutorial" && cameFrom.Value != "")
+        {
+            canvas.hud.SetActive(true);
+            startTimer = true;
+        }
     }
 
     private void Update()
     {
         Pause();
-        if (cameFrom.Value != "CutsceneTutorial")
+        if (startTimer)
         {
             Timer();
         }
