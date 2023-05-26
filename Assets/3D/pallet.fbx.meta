@@ -3,7 +3,12 @@ guid: ea4e145ceb4b8ff439063fa49feb91f1
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CaixasMaiores
+    second: {fileID: 2100000, guid: 7605586e948486242a8c01578310ebf7, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
