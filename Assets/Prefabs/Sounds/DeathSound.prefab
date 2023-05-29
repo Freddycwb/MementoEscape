@@ -47,9 +47,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audios:
-  - {fileID: 8300000, guid: e4d81d3f4fa171c4e9897693e2c6def7, type: 3}
+  - {fileID: 8300000, guid: af0e829ee6ce82246b90e201130415a7, type: 3}
   - {fileID: 8300000, guid: 044768c304f01bd4b94dd2ac9bd65b17, type: 3}
   - {fileID: 8300000, guid: d5ec99bdc895aae4f9cdf63301b35ce7, type: 3}
+  music: 0
 --- !u!114 &3367774838264065193
 MonoBehaviour:
   m_ObjectHideFlags: 0

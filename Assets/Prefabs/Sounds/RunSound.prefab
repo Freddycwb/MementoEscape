@@ -46,7 +46,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audios:
-  - {fileID: 8300000, guid: 98dd0d2c5a70ef74f89f392de06a5132, type: 3}
+  - {fileID: 8300000, guid: db66731bc4b1fea46b17d559168fe68a, type: 3}
+  - {fileID: 8300000, guid: cbc9d11c9209fa545a94c04f3298a824, type: 3}
+  - {fileID: 8300000, guid: 625f84195e9c01f469d69460f6dbf9ed, type: 3}
+  - {fileID: 8300000, guid: 635101d117302224cab85bab65e7615e, type: 3}
+  music: 0
 --- !u!82 &1442965535111787293
 AudioSource:
   m_ObjectHideFlags: 0
@@ -54,7 +58,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1442965535111787294}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
