@@ -8290,6 +8290,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4435924449945534408}
     m_Modifications:
+    - target: {fileID: 1763543430599974559, guid: 26497294a9d9db645a6f6f6e997a4ca5, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3464560578887212274, guid: 26497294a9d9db645a6f6f6e997a4ca5, type: 3}
       propertyPath: m_Name
       value: Checkpoint
@@ -8864,6 +8868,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4435924449945534408}
     m_Modifications:
+    - target: {fileID: 1763543430599974559, guid: 26497294a9d9db645a6f6f6e997a4ca5, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3464560578887212274, guid: 26497294a9d9db645a6f6f6e997a4ca5, type: 3}
       propertyPath: m_Name
       value: Checkpoint (2)
@@ -9190,6 +9198,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4435924449945534408}
     m_Modifications:
+    - target: {fileID: 1763543430599974559, guid: 26497294a9d9db645a6f6f6e997a4ca5, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3464560578887212274, guid: 26497294a9d9db645a6f6f6e997a4ca5, type: 3}
       propertyPath: m_Name
       value: Checkpoint (1)
