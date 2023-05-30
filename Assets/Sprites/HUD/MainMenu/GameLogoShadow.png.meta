@@ -103,7 +103,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: GameLogoShadow_0
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 1023
+        width: 256
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd7a9587a4b7f7c4199534af1aae0784
+      internalID: 1800062610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameLogoShadow_1
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 1014
+        width: 208
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e5cc5e0b9688734caa5a7d5b84938aa
+      internalID: 2069474201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameLogoShadow_2
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 431
+        width: 1207
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf541d3be2307454b8bb4035004f0d0c
+      internalID: 899120829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameLogoShadow_3
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 640
+        width: 294
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4040e3afe3cc9c8459c9289f0f6671c7
+      internalID: 311551579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameLogoShadow_4
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 684
+        width: 349
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1edfb1d9c24db46887a9c3748dd800
+      internalID: -771239179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +219,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GameLogoShadow_0: 1800062610
+      GameLogoShadow_1: 2069474201
+      GameLogoShadow_2: 899120829
+      GameLogoShadow_3: 311551579
+      GameLogoShadow_4: -771239179
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
