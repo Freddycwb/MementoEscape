@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 2303354847753288955}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.79999995, z: 0.5}
+  m_LocalScale: {x: 2, y: 3, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -168,11 +168,11 @@ MonoBehaviour:
   timeToAction: 0
   timeToSubAction: 3
   instantiateOnAction:
-  - {fileID: 1442965535111787294, guid: f79b9548feb96284e907c3ab3361bb53, type: 3}
+  - {fileID: 1442965535111787294, guid: 3a64e69aff09e694e8d89ea219598696, type: 3}
   - {fileID: 1882743717560799792, guid: f7c516dfe2ff4f94cafa2efd46c7bc11, type: 3}
   instantiateOnSubAction:
   - {fileID: 1882743717560799792, guid: e9728835a2d355949a1364544b84c62a, type: 3}
-  - {fileID: 1442965535111787294, guid: 02e6af43251662a48b888a2c27d44072, type: 3}
+  - {fileID: 1442965535111787294, guid: 3a64e69aff09e694e8d89ea219598696, type: 3}
   destroyOnDisable: 0
 --- !u!114 &7393118594224559216
 MonoBehaviour:
