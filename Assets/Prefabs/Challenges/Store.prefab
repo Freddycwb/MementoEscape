@@ -31193,6 +31193,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1609277918906150655, guid: 8ced5776405e1674889d17052c34d7e7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cacf392ce2d412a46a9f1a1a522e580c, type: 2}
     - target: {fileID: 3566817997881945760, guid: 8ced5776405e1674889d17052c34d7e7, type: 3}
       propertyPath: m_Name
       value: ChallengeThirdLine
