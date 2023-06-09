@@ -922,6 +922,7 @@ GameObject:
   - component: {fileID: 2005164230307331679}
   - component: {fileID: 8795886496263279587}
   - component: {fileID: 2005164230307331678}
+  - component: {fileID: 2005164229141754636}
   m_Layer: 0
   m_Name: Effects
   m_TagString: Untagged
@@ -936,7 +937,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2005164230307331651}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -944,7 +945,7 @@ Transform:
   - {fileID: 316940716}
   m_Father: {fileID: 2005164230133718153}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &2005164230307331672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1147,6 +1148,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2005164229141754636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005164230307331651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4ad886670250e64fafce701880969c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action:
+    m_PersistentCalls:
+      m_Calls: []
+  instantiateOnAction:
+  - {fileID: 0}
+  subAction:
+    m_PersistentCalls:
+      m_Calls: []
+  instantiateOnSubAction: []
+  destroyOnDisable: 0
 --- !u!1 &2521880079852071348
 GameObject:
   m_ObjectHideFlags: 0

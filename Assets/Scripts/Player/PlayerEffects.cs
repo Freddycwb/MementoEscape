@@ -24,8 +24,6 @@ public class PlayerEffects : MonoBehaviour
     [SerializeField] private GameObject jumpSound;
     [SerializeField] private GameObject landSound;
     [SerializeField] private GameObject respawnSound;
-    [SerializeField] private GameObject runSound;
-    private GameObject currentRunSound;
 
 
     private void Start()
@@ -55,14 +53,11 @@ public class PlayerEffects : MonoBehaviour
         if (isMoving.Value && isGrounded.Value && currentRunParticle == null)
         {
             currentRunParticle = Instantiate(runParticle, transform.position, jumpParticle.transform.rotation);
-            currentRunSound = Instantiate(runSound, transform.position, jumpParticle.transform.rotation);
             currentRunParticle.transform.SetParent(transform);
-            currentRunSound.transform.SetParent(transform);
         }
         else if ((!isMoving.Value && currentRunParticle != null) || !isGrounded.Value)
         {
             Destroy(currentRunParticle);
-            Destroy(currentRunSound);
         }
     }
 
