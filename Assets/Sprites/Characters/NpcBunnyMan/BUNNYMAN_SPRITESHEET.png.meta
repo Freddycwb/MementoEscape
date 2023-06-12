@@ -1,0 +1,322 @@
+fileFormatVersion: 2
+guid: e71dcc21e505d4f48803c30bbdbae96a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NpcSpriteBunnyManHead
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1029
+        width: 314
+        height: 411
+      alignment: 9
+      pivot: {x: 0.52330273, y: 0.025250735}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb6f79b5aa1240e49aa7f80bfee7ddee
+      internalID: 1713967095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcSpriteBunnyManBody
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 878
+        width: 273
+        height: 493
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c17ea46b010ee64f81397ed48dda36f
+      internalID: 833272392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcSpriteBunnyManCintura
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 1188
+        width: 231
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed15539d5d6513849b3c0daa1134c8ce
+      internalID: 1649807079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcSpriteBunnyManRightArm
+      rect:
+        serializedVersion: 2
+        x: 2276
+        y: 468
+        width: 284
+        height: 381
+      alignment: 9
+      pivot: {x: 0.14788732, y: 0.9144433}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f983ef930cfa3c499603ece0c6635b8
+      internalID: -1025222275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcSpriteBunnyManLeftArm
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 468
+        width: 257
+        height: 354
+      alignment: 9
+      pivot: {x: 0.92706645, y: 0.9340639}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac86a0380df10c45af6d2de4a12b91f
+      internalID: -1934536858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcSpriteBunnyManLeftLeg
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 338
+        width: 131
+        height: 263
+      alignment: 9
+      pivot: {x: 0.44414398, y: 0.93587154}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e149cb1f7b9027b4786e9322101200a6
+      internalID: -600090573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcSpriteBunnyManRightLeg
+      rect:
+        serializedVersion: 2
+        x: 1769
+        y: 570
+        width: 138
+        height: 252
+      alignment: 9
+      pivot: {x: 0.48232633, y: 0.92586166}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bebabcf353cfe684191e904d82fd635f
+      internalID: -1412816753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcSpriteBunnyManRightFoot
+      rect:
+        serializedVersion: 2
+        x: 1769
+        y: 39
+        width: 213
+        height: 279
+      alignment: 9
+      pivot: {x: 0.35113955, y: 0.8846492}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f65672315b085f43881035494d7a072
+      internalID: 1820113440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcSpriteBunnyManLeftFoot
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 227
+        height: 292
+      alignment: 9
+      pivot: {x: 0.428153, y: 0.90093565}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f632e445bd58a3d49b5b2aca1e4a50bf
+      internalID: 1612359372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a78fdced76211414b964e03d0990b0a1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BUNNYMAN_SPRITESHEET_7: 1822913072
+      NpcSpriteBunnyManBody: 833272392
+      NpcSpriteBunnyManCintura: 1649807079
+      NpcSpriteBunnyManHead: 1713967095
+      NpcSpriteBunnyManLeftArm: -1934536858
+      NpcSpriteBunnyManLeftFoot: 1612359372
+      NpcSpriteBunnyManLeftLeg: -600090573
+      NpcSpriteBunnyManRightArm: -1025222275
+      NpcSpriteBunnyManRightFoot: 1820113440
+      NpcSpriteBunnyManRightLeg: -1412816753
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
