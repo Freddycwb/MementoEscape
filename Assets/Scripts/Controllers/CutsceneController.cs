@@ -93,7 +93,7 @@ public class CutsceneController : MonoBehaviour
 
     public IEnumerator WaitForTutorialCutscene()
     {
-        yield return new WaitForSeconds(11);
+        yield return new WaitForSeconds(21);
         blackscreen.Play("Transition");
         yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene("Game");
@@ -101,7 +101,7 @@ public class CutsceneController : MonoBehaviour
 
     public IEnumerator WaitForTutorialEndCutscene()
     {
-        yield return new WaitForSeconds(6);
+        yield return new WaitForSeconds(15);
         blackscreen.Play("Transition");
         yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene("Game");
@@ -109,7 +109,7 @@ public class CutsceneController : MonoBehaviour
 
     public IEnumerator WaitForFullCutscene()
     {
-        yield return new WaitForSeconds(17);
+        yield return new WaitForSeconds(36);
         blackscreen.Play("Transition");
         yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene("Game");
