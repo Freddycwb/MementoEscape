@@ -972,7 +972,6 @@ MonoBehaviour:
   jumpSound: {fileID: 1442965535111787294, guid: 02e6af43251662a48b888a2c27d44072, type: 3}
   landSound: {fileID: 1442965535111787294, guid: c27e9a679083b6749b534a5d467f3c44, type: 3}
   respawnSound: {fileID: 1442965535111787294, guid: 143334d922acb0343857a63672b74473, type: 3}
-  runSound: {fileID: 1442965535111787294, guid: 81ac5af3030615841933c92f271ddb91, type: 3}
 --- !u!114 &9020649619676380760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1164,7 +1163,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   instantiateOnAction:
-  - {fileID: 0}
+  - {fileID: 1442965535111787294, guid: 81ac5af3030615841933c92f271ddb91, type: 3}
   subAction:
     m_PersistentCalls:
       m_Calls: []
