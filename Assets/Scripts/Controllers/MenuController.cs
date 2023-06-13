@@ -14,16 +14,13 @@ public class MenuController : MonoBehaviour
     [SerializeField] private FloatVariable lastRunTime;
     [SerializeField] private FloatVariable lastRunScore;
 
-    [SerializeField] private Image background;
+    [SerializeField] private Animator background;
+    [SerializeField] private Animator logo;
 
     [SerializeField] private GameObject main;
     [SerializeField] private GameObject gameOver;
     [SerializeField] private GameObject victory;
     [SerializeField] private Animator blackscreen;
-
-    [SerializeField] private Sprite mainBackground;
-    [SerializeField] private Sprite gameoverBackground;
-    [SerializeField] private Sprite victoryBackground;
 
     private bool showingLeaderboard;
     [SerializeField] private ListStringVariable names;
@@ -55,14 +52,16 @@ public class MenuController : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         if (cameFrom.Value == "GameTimerRunOut")
         {
-            background.sprite = gameoverBackground;
+            background.Play("BackgroundGrey");
+            logo.Play("DefeatMenu");
             main.SetActive(false);
             gameOver.SetActive(true);  
             cameFrom.Value = "MenuTimerRunOut";
         }
         else if (cameFrom.Value == "GameVictory")
         {
-            background.sprite = victoryBackground;
+            background.Play("BackGroundBlue");
+            logo.Play("VictoryMenu");
             main.SetActive(false);
             victory.SetActive(true);
             StartCoroutine("IncreaseScore");
@@ -71,7 +70,8 @@ public class MenuController : MonoBehaviour
         }
         else
         {
-            background.sprite = mainBackground;
+            background.Play("MainMenuAnimation");
+            logo.Play("GameLogoRotationIntro");
             cameFrom.Value = "Menu";
         }
     }
