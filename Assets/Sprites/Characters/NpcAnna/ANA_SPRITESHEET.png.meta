@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -36,13 +36,13 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -51,9 +51,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -103,18 +103,282 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ANA_SPRITESHEET_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1138
+        width: 427
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5032c0db212605469327b0df60c44ae
+      internalID: 785084195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteNpcAnaArmLeft
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 1008
+        width: 188
+        height: 376
+      alignment: 9
+      pivot: {x: 0.8632592, y: 0.92164}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de4186010c480240811a3a2c7745d9f
+      internalID: 564472410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteNpcAnaArmRight
+      rect:
+        serializedVersion: 2
+        x: 1892
+        y: 1052
+        width: 250
+        height: 332
+      alignment: 9
+      pivot: {x: 0.17804883, y: 0.9407878}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c2441fdc6e47f4aad222a22a7f054c
+      internalID: 2048421328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANA_SPRITESHEET_3
+      rect:
+        serializedVersion: 2
+        x: 2316
+        y: 1073
+        width: 244
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ff0a426ddea7147a4592e2585bec9f
+      internalID: 67973285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteNpcAnaCintura
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 1008
+        width: 237
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71435dcf846d5d34ba2ed19694f8aac7
+      internalID: -1801137419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteNpcAnaLegLeft
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 498
+        width: 145
+        height: 271
+      alignment: 9
+      pivot: {x: 0.51682043, y: 0.92300427}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ee1636cf94c55a4ca6f5c854889e0b1
+      internalID: 251359122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ANA_SPRITESHEET_6
+      rect:
+        serializedVersion: 2
+        x: 1962
+        y: 753
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986b303d047f8894d9440b056a784ffa
+      internalID: 932434458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteNpcAnaLegRight
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 461
+        width: 160
+        height: 270
+      alignment: 9
+      pivot: {x: 0.37804946, y: 0.9245709}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35ffd020c9d027543bcc3b00ac953be3
+      internalID: -593238362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteNpcAnaHead
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 427
+        height: 301
+      alignment: 9
+      pivot: {x: 0.494288, y: 0.054331414}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 766d24493bd47644099839c3892ee305
+      internalID: 1099928320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteNpcAnaFootLeft
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 32
+        width: 235
+        height: 286
+      alignment: 9
+      pivot: {x: 0.44810584, y: 0.93493116}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69da0b645c79de84aaa0d39a3c74b392
+      internalID: 290034290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteNpcAnaFootRight
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 26
+        width: 235
+        height: 287
+      alignment: 9
+      pivot: {x: 0.4273479, y: 0.93341565}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de9817bf1b08abd44a2b942ae961d0f0
+      internalID: 297578194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteNpcAnaBody
+      rect:
+        serializedVersion: 2
+        x: 2316
+        y: 0
+        width: 244
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef4afae6f9379540949a22408a70775
+      internalID: 1384954814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b11609ae8f188dc4198cf84f5d39655f
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ANA_SPRITESHEET_0: 785084195
+      ANA_SPRITESHEET_3: 67973285
+      ANA_SPRITESHEET_6: 932434458
+      SpriteNpcAnaArmLeft: 564472410
+      SpriteNpcAnaArmRight: 2048421328
+      SpriteNpcAnaBody: 1384954814
+      SpriteNpcAnaCintura: -1801137419
+      SpriteNpcAnaFootLeft: 290034290
+      SpriteNpcAnaFootRight: 297578194
+      SpriteNpcAnaHead: 1099928320
+      SpriteNpcAnaLegLeft: 251359122
+      SpriteNpcAnaLegRight: -593238362
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
