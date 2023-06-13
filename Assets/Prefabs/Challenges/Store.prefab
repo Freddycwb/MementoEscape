@@ -2498,7 +2498,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2539014567676915195
 Transform:
   m_ObjectHideFlags: 0
@@ -2745,8 +2745,8 @@ MonoBehaviour:
   - {x: 0, y: 90, z: 240}
   - {x: 0, y: 90, z: 0}
   timeToReachDestination:
-  - 2
-  - 2
+  - 3
+  - 3
   delayAfterReachDestination: []
 --- !u!114 &2539014567825854193
 MonoBehaviour:
@@ -3105,8 +3105,8 @@ MonoBehaviour:
   - {x: 0, y: 90, z: 240}
   - {x: 0, y: 90, z: 0}
   timeToReachDestination:
-  - 2
-  - 2
+  - 3
+  - 3
   delayAfterReachDestination: []
 --- !u!114 &2539014568128710287
 MonoBehaviour:
@@ -4279,7 +4279,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2539014569454851028
 Transform:
   m_ObjectHideFlags: 0
@@ -17267,8 +17267,8 @@ MonoBehaviour:
   - {x: 0, y: 90, z: 240}
   - {x: 0, y: 90, z: 0}
   timeToReachDestination:
-  - 2
-  - 2
+  - 3
+  - 3
   delayAfterReachDestination: []
 --- !u!114 &4812801353871199973
 MonoBehaviour:
@@ -17619,10 +17619,10 @@ MonoBehaviour:
   - {x: 0, y: -1, z: 0}
   - {x: 0, y: 0, z: 0}
   timeToReachDestination:
-  - 8
-  - 0.16
-  - 8
-  - 0.16
+  - 10
+  - 0.2
+  - 10
+  - 0.2
   delayAfterReachDestination: []
 --- !u!114 &4812801353928194233
 MonoBehaviour:
@@ -17654,7 +17654,7 @@ MonoBehaviour:
   subAction:
     m_PersistentCalls:
       m_Calls: []
-  timeToAction: 6.12
+  timeToAction: 7.28
   timeToSubAction: 0
   instantiateOnAction: []
   instantiateOnSubAction: []
@@ -17671,7 +17671,6 @@ GameObject:
   - component: {fileID: 4812801353980987322}
   - component: {fileID: 4812801353980987321}
   - component: {fileID: 4812801353980987320}
-  - component: {fileID: 4812801353980987319}
   m_Layer: 3
   m_Name: Death
   m_TagString: Untagged
@@ -17757,41 +17756,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4812801353980987319
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4812801353980987318}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8952d7f872e0574098028886e0b94a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  action:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: e69bff8e917d04e4d84720dcb3b07347, type: 2}
-        m_TargetAssemblyTypeName: GameEvent, Assembly-CSharp
-        m_MethodName: Raise
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  subAction:
-    m_PersistentCalls:
-      m_Calls: []
-  timeToAction: 0
-  timeToSubAction: 0
-  instantiateOnAction: []
-  instantiateOnSubAction: []
-  destroyOnDisable: 1
 --- !u!1 &4812801354054584279
 GameObject:
   m_ObjectHideFlags: 0
@@ -18136,10 +18100,10 @@ MonoBehaviour:
   - {x: 0, y: -1, z: 0}
   - {x: 0, y: 0, z: 0}
   timeToReachDestination:
-  - 8
-  - 0.16
-  - 8
-  - 0.16
+  - 10
+  - 0.2
+  - 10
+  - 0.2
   delayAfterReachDestination: []
 --- !u!114 &4812801354233797537
 MonoBehaviour:
@@ -18171,7 +18135,7 @@ MonoBehaviour:
   subAction:
     m_PersistentCalls:
       m_Calls: []
-  timeToAction: 4.84
+  timeToAction: 5.71
   timeToSubAction: 0
   instantiateOnAction: []
   instantiateOnSubAction: []
@@ -18296,10 +18260,10 @@ MonoBehaviour:
   - {x: 0, y: -1, z: 0}
   - {x: 0, y: 0, z: 0}
   timeToReachDestination:
-  - 8
-  - 0.16
-  - 8
-  - 0.16
+  - 10
+  - 0.2
+  - 10
+  - 0.2
   delayAfterReachDestination: []
 --- !u!114 &4812801354266823660
 MonoBehaviour:
@@ -18331,7 +18295,7 @@ MonoBehaviour:
   subAction:
     m_PersistentCalls:
       m_Calls: []
-  timeToAction: 11.24
+  timeToAction: 13.56
   timeToSubAction: 0
   instantiateOnAction: []
   instantiateOnSubAction: []
@@ -18393,8 +18357,8 @@ MonoBehaviour:
   - {x: 0, y: 90, z: 240}
   - {x: 0, y: 90, z: 0}
   timeToReachDestination:
-  - 2
-  - 2
+  - 3
+  - 3
   delayAfterReachDestination: []
 --- !u!114 &4812801354307458877
 MonoBehaviour:
@@ -18775,10 +18739,10 @@ MonoBehaviour:
   - {x: 0, y: -1, z: 0}
   - {x: 0, y: 0, z: 0}
   timeToReachDestination:
-  - 8
-  - 0.16
-  - 8
-  - 0.16
+  - 10
+  - 0.2
+  - 10
+  - 0.2
   delayAfterReachDestination: []
 --- !u!114 &4812801354461163175
 MonoBehaviour:
@@ -18810,7 +18774,7 @@ MonoBehaviour:
   subAction:
     m_PersistentCalls:
       m_Calls: []
-  timeToAction: 13.8
+  timeToAction: 16.7
   timeToSubAction: 0
   instantiateOnAction: []
   instantiateOnSubAction: []
@@ -19056,7 +19020,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4812801354578785962
 Transform:
   m_ObjectHideFlags: 0
@@ -19478,10 +19442,10 @@ MonoBehaviour:
   - {x: 0, y: -1, z: 0}
   - {x: 0, y: 0, z: 0}
   timeToReachDestination:
-  - 8
-  - 0.16
-  - 8
-  - 0.16
+  - 10
+  - 0.2
+  - 10
+  - 0.2
   delayAfterReachDestination: []
 --- !u!114 &4812801354887193041
 MonoBehaviour:
@@ -20267,10 +20231,10 @@ MonoBehaviour:
   - {x: 0, y: -1, z: 0}
   - {x: 0, y: 0, z: 0}
   timeToReachDestination:
-  - 8
-  - 0.16
-  - 8
-  - 0.16
+  - 10
+  - 0.2
+  - 10
+  - 0.2
   delayAfterReachDestination: []
 --- !u!114 &4812801355359925156
 MonoBehaviour:
@@ -20302,7 +20266,7 @@ MonoBehaviour:
   subAction:
     m_PersistentCalls:
       m_Calls: []
-  timeToAction: 7.4
+  timeToAction: 8.85
   timeToSubAction: 0
   instantiateOnAction: []
   instantiateOnSubAction: []
@@ -20524,10 +20488,10 @@ MonoBehaviour:
   - {x: 0, y: -1, z: 0}
   - {x: 0, y: 0, z: 0}
   timeToReachDestination:
-  - 8
-  - 0.16
-  - 8
-  - 0.16
+  - 10
+  - 0.2
+  - 10
+  - 0.2
   delayAfterReachDestination: []
 --- !u!114 &4812801355413665907
 MonoBehaviour:
@@ -20559,7 +20523,7 @@ MonoBehaviour:
   subAction:
     m_PersistentCalls:
       m_Calls: []
-  timeToAction: 16.36
+  timeToAction: 19.84
   timeToSubAction: 0
   instantiateOnAction: []
   instantiateOnSubAction: []
@@ -20781,10 +20745,10 @@ MonoBehaviour:
   - {x: 0, y: -1, z: 0}
   - {x: 0, y: 0, z: 0}
   timeToReachDestination:
-  - 8
-  - 0.16
-  - 8
-  - 0.16
+  - 10
+  - 0.2
+  - 10
+  - 0.2
   delayAfterReachDestination: []
 --- !u!114 &4812801355457359261
 MonoBehaviour:
@@ -20816,7 +20780,7 @@ MonoBehaviour:
   subAction:
     m_PersistentCalls:
       m_Calls: []
-  timeToAction: 9.96
+  timeToAction: 11.99
   timeToSubAction: 0
   instantiateOnAction: []
   instantiateOnSubAction: []
@@ -21165,10 +21129,10 @@ MonoBehaviour:
   - {x: 0, y: -1, z: 0}
   - {x: 0, y: 0, z: 0}
   timeToReachDestination:
-  - 8
-  - 0.16
-  - 8
-  - 0.16
+  - 10
+  - 0.2
+  - 10
+  - 0.2
   delayAfterReachDestination: []
 --- !u!114 &4812801355584272236
 MonoBehaviour:
@@ -21200,7 +21164,7 @@ MonoBehaviour:
   subAction:
     m_PersistentCalls:
       m_Calls: []
-  timeToAction: 8.68
+  timeToAction: 10.42
   timeToSubAction: 0
   instantiateOnAction: []
   instantiateOnSubAction: []
@@ -21325,10 +21289,10 @@ MonoBehaviour:
   - {x: 0, y: -1, z: 0}
   - {x: 0, y: 0, z: 0}
   timeToReachDestination:
-  - 8
-  - 0.16
-  - 8
-  - 0.16
+  - 10
+  - 0.2
+  - 10
+  - 0.2
   delayAfterReachDestination: []
 --- !u!114 &4812801355605553442
 MonoBehaviour:
@@ -21360,7 +21324,7 @@ MonoBehaviour:
   subAction:
     m_PersistentCalls:
       m_Calls: []
-  timeToAction: 3.56
+  timeToAction: 4.14
   timeToSubAction: 0
   instantiateOnAction: []
   instantiateOnSubAction: []
@@ -21679,10 +21643,10 @@ MonoBehaviour:
   - {x: 0, y: -1, z: 0}
   - {x: 0, y: 0, z: 0}
   timeToReachDestination:
-  - 8
-  - 0.16
-  - 8
-  - 0.16
+  - 10
+  - 0.2
+  - 10
+  - 0.2
   delayAfterReachDestination: []
 --- !u!114 &4812801355684969578
 MonoBehaviour:
@@ -21714,7 +21678,7 @@ MonoBehaviour:
   subAction:
     m_PersistentCalls:
       m_Calls: []
-  timeToAction: 2.28
+  timeToAction: 2.57
   timeToSubAction: 0
   instantiateOnAction: []
   instantiateOnSubAction: []
@@ -21839,10 +21803,10 @@ MonoBehaviour:
   - {x: 0, y: -1, z: 0}
   - {x: 0, y: 0, z: 0}
   timeToReachDestination:
-  - 8
-  - 0.16
-  - 8
-  - 0.16
+  - 10
+  - 0.2
+  - 10
+  - 0.2
   delayAfterReachDestination: []
 --- !u!114 &4812801355745493849
 MonoBehaviour:
@@ -21874,7 +21838,7 @@ MonoBehaviour:
   subAction:
     m_PersistentCalls:
       m_Calls: []
-  timeToAction: 15.08
+  timeToAction: 18.27
   timeToSubAction: 0
   instantiateOnAction: []
   instantiateOnSubAction: []
@@ -22448,10 +22412,10 @@ MonoBehaviour:
   - {x: 0, y: -1, z: 0}
   - {x: 0, y: 0, z: 0}
   timeToReachDestination:
-  - 8
-  - 0.16
-  - 8
-  - 0.16
+  - 10
+  - 0.2
+  - 10
+  - 0.2
   delayAfterReachDestination: []
 --- !u!114 &4812801355866919799
 MonoBehaviour:
@@ -22483,7 +22447,7 @@ MonoBehaviour:
   subAction:
     m_PersistentCalls:
       m_Calls: []
-  timeToAction: 12.52
+  timeToAction: 15.13
   timeToSubAction: 0
   instantiateOnAction: []
   instantiateOnSubAction: []
@@ -22505,7 +22469,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4812801355911826135
 Transform:
   m_ObjectHideFlags: 0
