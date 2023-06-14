@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -36,13 +36,13 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -51,9 +51,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -103,18 +103,216 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: NpcSpriteSergioHead
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1143
+        width: 224
+        height: 260
+      alignment: 9
+      pivot: {x: 0.4782229, y: 0.115385085}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04b0a03af0385584fba6ac3c2c4bdbc5
+      internalID: -1036311858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcSpriteSergioBody
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 1029
+        width: 247
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c93e6bed01a8ca499642a1b101fd648
+      internalID: -2037062259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcSpriteSergioLeftArm
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 571
+        width: 195
+        height: 378
+      alignment: 9
+      pivot: {x: 0.8502189, y: 0.93876654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da55a50c8e02dbf4fae4ec5dab26c7c2
+      internalID: -413856352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcSpriteSergioCintura
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 772
+        width: 234
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a02e27290a4a37f4bb98f3fb9895edc8
+      internalID: 1074576388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcSpriteSergioRightArm
+      rect:
+        serializedVersion: 2
+        x: 2273
+        y: 601
+        width: 249
+        height: 342
+      alignment: 9
+      pivot: {x: 0.12777968, y: 0.9492941}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d97f1b6e14cbe64489601786f5901984
+      internalID: 22456351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcSpriteSergioLeftLeg
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 537
+        width: 73
+        height: 235
+      alignment: 9
+      pivot: {x: 0.46658868, y: 0.935911}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b8990145357a924d9f975468d52c716
+      internalID: -1500906318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcSpriteSergioRightLeg
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 336
+        width: 74
+        height: 236
+      alignment: 9
+      pivot: {x: 0.53296065, y: 0.9133942}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ab27524b71cfed4a9bbc229398bbcff
+      internalID: -2016347377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcSpriteSergioLeftfoot
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 86
+        width: 204
+        height: 281
+      alignment: 9
+      pivot: {x: 0.32066017, y: 0.93399024}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad5816cc0fd57234bb5812388a1374fc
+      internalID: -672925211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcSpriteSergioRightFoot
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 86
+        width: 203
+        height: 281
+      alignment: 9
+      pivot: {x: 0.31977612, y: 0.94267005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa3f80d297b57cf4e923196d854cded1
+      internalID: -1465886972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      NpcSpriteSergioBody: -2037062259
+      NpcSpriteSergioCintura: 1074576388
+      NpcSpriteSergioHead: -1036311858
+      NpcSpriteSergioLeftArm: -413856352
+      NpcSpriteSergioLeftLeg: -1500906318
+      NpcSpriteSergioLeftfoot: -672925211
+      NpcSpriteSergioRightArm: 22456351
+      NpcSpriteSergioRightFoot: -1465886972
+      NpcSpriteSergioRightLeg: -2016347377
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

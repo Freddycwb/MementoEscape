@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -36,13 +36,13 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -51,9 +51,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -103,18 +103,216 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: NpcSpriteMelissaHead
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1098
+        width: 309
+        height: 342
+      alignment: 9
+      pivot: {x: 0.6183992, y: 0.05783777}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70bade3d3fbc49e43bea70169f25e202
+      internalID: 1933073670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcSpriteMelissaBody
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 1033
+        width: 229
+        height: 359
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4728249}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 106aa08fbb8bdf84ba7467ab12cec23f
+      internalID: -902846032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcSpriteMelissaRIghtArm
+      rect:
+        serializedVersion: 2
+        x: 2226
+        y: 1033
+        width: 334
+        height: 335
+      alignment: 9
+      pivot: {x: 0.11296913, y: 0.9222791}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9699ed7115ce374489dc8110ae28467
+      internalID: 422964803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcSpriteMelissaLeftLeg
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 858
+        width: 73
+        height: 240
+      alignment: 9
+      pivot: {x: 0.49999917, y: 0.91666716}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdabf75b63d13fc42881a61b05db9eb1
+      internalID: 1546397051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcSpriteMelissaRightLeg
+      rect:
+        serializedVersion: 2
+        x: 1896
+        y: 638
+        width: 72
+        height: 240
+      alignment: 9
+      pivot: {x: 0.4661255, y: 0.90650433}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 059cec1030ffa954e9b0cfdaa2b8891a
+      internalID: 345549439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcSpriteMelissaLeftArm
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 435
+        width: 183
+        height: 396
+      alignment: 9
+      pivot: {x: 0.8198721, y: 0.92649376}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c4bcbb601165544fb981e4d28fc92bf
+      internalID: -905300750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcSpriteMelissaCintura
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 640
+        width: 265
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8434bef4bd97a488c2b65cec8579d9
+      internalID: -1113699377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcSpriteMelissaLeftFoot
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 89
+        width: 184
+        height: 270
+      alignment: 9
+      pivot: {x: 0.27465555, y: 0.9245714}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cc66f83a62729248996ed78812673a5
+      internalID: 846859806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NpcSpriteMelissaRightFoot
+      rect:
+        serializedVersion: 2
+        x: 1713
+        y: 89
+        width: 184
+        height: 270
+      alignment: 9
+      pivot: {x: 0.27465555, y: 0.93360484}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c50d9ab424f624f97f5baefe072aee
+      internalID: -345099148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 80639a972e5aa3e4aa014962887b515b
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      NpcSpriteMelissaBody: -902846032
+      NpcSpriteMelissaCintura: -1113699377
+      NpcSpriteMelissaHead: 1933073670
+      NpcSpriteMelissaLeftArm: -905300750
+      NpcSpriteMelissaLeftFoot: 846859806
+      NpcSpriteMelissaLeftLeg: 1546397051
+      NpcSpriteMelissaRIghtArm: 422964803
+      NpcSpriteMelissaRightFoot: -345099148
+      NpcSpriteMelissaRightLeg: 345549439
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
