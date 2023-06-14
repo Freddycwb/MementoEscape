@@ -18,6 +18,7 @@ public class GameController : MonoBehaviour
     [SerializeField] private CanvasObjects canvas;
     [SerializeField] private GameEvent respawn;
     private Vector3 spawnPoint;
+    private bool canPause;
 
     public float timeToFinish;
     [SerializeField] private FloatVariable score;
@@ -68,6 +69,7 @@ public class GameController : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         player.GetComponent<PlayerInput>().SetCanControl(true);
+        canPause = true;
         if (cameFrom.Value != "CutsceneTutorial" && cameFrom.Value != "")
         {
             canvas.hud.SetActive(true);
@@ -108,9 +110,8 @@ public class GameController : MonoBehaviour
 
     private void Pause()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && canPause)
         {
-
             canvas.pauseMenu.SetActive(!canvas.pauseMenu.activeSelf);
             player.GetComponent<PlayerInput>().SetCanControl(!canvas.pauseMenu.activeSelf);
             thirdPersonCamera.GetComponentInChildren<CinemachineFreeLook>().enabled = !canvas.pauseMenu.activeSelf;

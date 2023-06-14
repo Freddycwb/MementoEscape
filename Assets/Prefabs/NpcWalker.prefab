@@ -347,13 +347,14 @@ GameObject:
   m_Component:
   - component: {fileID: 4943060677915144725}
   - component: {fileID: 8049608543274120364}
+  - component: {fileID: 7787835417413631640}
   m_Layer: 0
   m_Name: AnaRootBone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4943060677915144725
 Transform:
   m_ObjectHideFlags: 0
@@ -362,7 +363,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1465696617253163032}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.25245667, y: -10.245747, z: 0}
+  m_LocalPosition: {x: -0.25245667, y: 2.0042534, z: 0}
   m_LocalScale: {x: 1.3296684, y: 1.3296684, z: 1.3296684}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -391,6 +392,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7787835417413631640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465696617253163032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d37fa95c789f5c545a8154a97b51ad57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveY: 1
+  rotateVel: 300
 --- !u!1 &1597095882784595210
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,7 +591,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1256988146419389814
 Transform:
   m_ObjectHideFlags: 0
@@ -585,7 +600,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1600381559279655043}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.3941232, y: -42.5, z: 6.884876}
+  m_LocalPosition: {x: -1.3941232, y: -30.25, z: 6.884876}
   m_LocalScale: {x: 25.837132, y: 25.837132, z: 25.837132}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -998,13 +1013,14 @@ GameObject:
   m_Component:
   - component: {fileID: 8431819447207857972}
   - component: {fileID: 6272997654463315154}
+  - component: {fileID: 2732116649162629453}
   m_Layer: 0
   m_Name: SergioRootBone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8431819447207857972
 Transform:
   m_ObjectHideFlags: 0
@@ -1013,7 +1029,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2309442078205773364}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.25245667, y: -10.245747, z: 0}
+  m_LocalPosition: {x: -0.25245667, y: 2.0042534, z: 0}
   m_LocalScale: {x: 1.3296684, y: 1.3296684, z: 1.3296684}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1042,6 +1058,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2732116649162629453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2309442078205773364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d37fa95c789f5c545a8154a97b51ad57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveY: 1
+  rotateVel: 300
 --- !u!1 &2693079961685753157
 GameObject:
   m_ObjectHideFlags: 0
@@ -1473,6 +1503,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7904581737773869070}
+  - component: {fileID: 911859633233969846}
   m_Layer: 0
   m_Name: NpcWalker
   m_TagString: Untagged
@@ -1500,6 +1531,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &911859633233969846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3833994714446825415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e656ea7c89b42234096f7ad72d0b7034, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotation: 0
+  moveFromOrigin: 0
+  loop: 1
+  destiny:
+  - {x: 58, y: -24, z: 32}
+  - {x: 58, y: -24, z: -36}
+  - {x: -70, y: -24, z: -36}
+  - {x: 58, y: -24, z: -36}
+  - {x: 58, y: -24, z: 32}
+  - {x: -70, y: -24, z: 32}
+  timeToReachDestination:
+  - 6.5
+  - 3
+  - 6.5
+  - 6.5
+  - 3
+  - 6.5
+  delayAfterReachDestination: []
 --- !u!1 &4021634488858643396
 GameObject:
   m_ObjectHideFlags: 0
@@ -2106,6 +2167,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3896427713797617608}
   - component: {fileID: 1682495689524013842}
+  - component: {fileID: 5485424260792006040}
   m_Layer: 0
   m_Name: BunnyManRootBone
   m_TagString: Untagged
@@ -2120,8 +2182,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5695564462638098858}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.25245667, y: -10.245747, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.25245667, y: 2.0042534, z: 0}
   m_LocalScale: {x: 1.3296684, y: 1.3296684, z: 1.3296684}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2150,6 +2212,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5485424260792006040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5695564462638098858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d37fa95c789f5c545a8154a97b51ad57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveY: 1
+  rotateVel: 300
 --- !u!1 &6021159251784266124
 GameObject:
   m_ObjectHideFlags: 0
@@ -3007,13 +3083,14 @@ GameObject:
   m_Component:
   - component: {fileID: 3824602616550575714}
   - component: {fileID: 5968389280210896564}
+  - component: {fileID: 413459365818587339}
   m_Layer: 0
   m_Name: MelissaRootBone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3824602616550575714
 Transform:
   m_ObjectHideFlags: 0
@@ -3022,7 +3099,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8442340683904212796}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.25245667, y: -10.245747, z: 0}
+  m_LocalPosition: {x: -0.25245667, y: 2.0042534, z: 0}
   m_LocalScale: {x: 1.3296684, y: 1.3296684, z: 1.3296684}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3051,6 +3128,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &413459365818587339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8442340683904212796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d37fa95c789f5c545a8154a97b51ad57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveY: 1
+  rotateVel: 300
 --- !u!1 &8595683890370921222
 GameObject:
   m_ObjectHideFlags: 0
