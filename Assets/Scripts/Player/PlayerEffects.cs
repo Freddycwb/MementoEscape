@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class PlayerEffects : MonoBehaviour
 {
     private Vector3 lastPos;
     private Animator animator;
     private IInput _input;
+    private Transform myTransform;
+    [SerializeField] private float rotateSpeed;
     [SerializeField] private float groundedRememberTime;
     private float groundedRemember;
     [SerializeField] private BoolVariable isGrounded;
@@ -30,17 +33,14 @@ public class PlayerEffects : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         _input = GetComponentInParent<PlayerInput>();
-        lastPos = new Vector3(transform.position.x, 0, transform.position.z);
+        TryGetComponent(out myTransform);
     }
 
     private void Update()
     {
-        if ((lastPos - transform.position).x + (lastPos - transform.position).z != 0)
+        if (_input.direction.magnitude != 0)
         {
-            Vector3 relativePos = lastPos - new Vector3(transform.position.x, 0, transform.position.z); ;
-            Quaternion rotation = Quaternion.LookRotation(relativePos, Vector3.up);
-            transform.rotation = rotation;
-            lastPos = new Vector3(transform.position.x, 0, transform.position.z);
+            myTransform.rotation = Quaternion.Slerp(myTransform.rotation, Quaternion.LookRotation(new Vector3(-_input.direction.x, 0, -_input.direction.z)), Time.deltaTime * rotateSpeed);
         }
 
         groundedRemember -= Time.deltaTime;

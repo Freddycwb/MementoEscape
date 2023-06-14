@@ -958,6 +958,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b8ffdd0d7e93044daaed35497fc62dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotateSpeed: 7
   groundedRememberTime: 0.2
   isGrounded: {fileID: 11400000, guid: dc0cbaaa34105694391e6954b58914fa, type: 2}
   isMoving: {fileID: 11400000, guid: 0909a840fa0948a48834d18883b40f03, type: 2}
