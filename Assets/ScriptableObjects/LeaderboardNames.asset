@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: LeaderboardNames
   m_EditorClassIdentifier: 
   DeveloperDescription: 
-  Value: []
+  Value:
+  - lskdjask
   PersistBetweenScenes: 1

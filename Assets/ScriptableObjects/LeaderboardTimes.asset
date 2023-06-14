@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: LeaderboardTimes
   m_EditorClassIdentifier: 
   DeveloperDescription: 
-  Value: []
+  Value:
+  - 130.74696
   PersistBetweenScenes: 1
