@@ -8,10 +8,12 @@ using Cinemachine;
 
 public class GameController : MonoBehaviour
 {
+    private IInput _input;
     [SerializeField] private bool test;
     [SerializeField] private StringVariable cameFrom;
     [SerializeField] private FloatVariable gameTime;
     [SerializeField] private FloatVariable lastRunTime;
+    private float timeToJumpCutscene;
 
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject thirdPersonCamera;
@@ -34,6 +36,7 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
+        _input = GetComponent<IInput>();
         Cursor.lockState = CursorLockMode.Locked;
         gameTime.Value = timeToFinish;
         score.Value = 0;
@@ -79,6 +82,18 @@ public class GameController : MonoBehaviour
 
     private void Update()
     {
+        if (_input.start && !canPause)
+        {
+            StopCoroutine("EnablePlayer");
+            player.GetComponent<PlayerInput>().SetCanControl(true);
+            camAnim.Play("CameraIdle");
+            if (cameFrom.Value != "CutsceneTutorial" && cameFrom.Value != "")
+            {
+                canvas.hud.SetActive(true);
+                startTimer = true;
+            }
+            StartCoroutine("WaitFrameToUnlockPause");
+        }
         Pause();
         if (startTimer)
         {
@@ -86,6 +101,18 @@ public class GameController : MonoBehaviour
         }
         Score();
         Cheat();
+    }
+
+    private IEnumerator WaitFrameToUnlockPause()
+    {
+        yield return new WaitForEndOfFrame();
+        canPause = true;
+    } 
+
+    public void Restart()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Game");
     }
 
     private void Cheat()
@@ -110,7 +137,7 @@ public class GameController : MonoBehaviour
 
     private void Pause()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && canPause)
+        if (_input.start && canPause)
         {
             canvas.pauseMenu.SetActive(!canvas.pauseMenu.activeSelf);
             player.GetComponent<PlayerInput>().SetCanControl(!canvas.pauseMenu.activeSelf);

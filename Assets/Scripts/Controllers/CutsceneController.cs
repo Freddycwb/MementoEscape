@@ -7,16 +7,17 @@ using UnityEngine.SceneManagement;
 
 public class CutsceneController : MonoBehaviour
 {
+    private IInput _input;
     [SerializeField] private StringVariable cameFrom;
 
     private Animator animator;
     [SerializeField] private Animator blackscreen;
     private string playingCutscene;
-    private float skipCutsceneCount;
     private bool gamepadActionDone;
 
     private void Start()
     {
+        _input = GetComponent<IInput>();
         animator = GetComponent<Animator>();
         if (cameFrom.Value == "Menu")
         {
@@ -57,17 +58,9 @@ public class CutsceneController : MonoBehaviour
 
     private void HoldAnyButton()
     {
-        if (Input.anyKey && playingCutscene != "TutorialOption")
+        if (_input.start && playingCutscene != "TutorialOption")
         {
-            skipCutsceneCount += Time.deltaTime;
-            if (skipCutsceneCount > 1)
-            {
-                StartCoroutine("SkipCutscene", "Game");
-            }
-        }
-        else
-        {
-            skipCutsceneCount = 0;
+            StartCoroutine("SkipCutscene", "Game");
         }
     }
 

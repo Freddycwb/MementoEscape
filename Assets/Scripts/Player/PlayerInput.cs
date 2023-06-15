@@ -106,6 +106,26 @@ public class PlayerInput : MonoBehaviour, IInput
         }
     }
 
+    public bool start
+    {
+        get
+        {
+            if (canControl)
+            {
+                bool gamepadJump = false;
+                if (Gamepad.current != null)
+                {
+                    gamepadJump = Gamepad.current.startButton.wasPressedThisFrame;
+                }
+                return Input.GetKeyDown(KeyCode.Return) || gamepadJump;
+            }
+            else
+            {
+                return false;
+            }
+        }
+    }
+
     public void SetCanControl(bool state)
     {
         canControl = state;

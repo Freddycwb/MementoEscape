@@ -7,4 +7,5 @@ public interface IInput
     Vector2 look { get; }
     bool jump { get; }
     bool dash { get; }
+    bool start { get; }
 }
