@@ -117,7 +117,7 @@ public class PlayerInput : MonoBehaviour, IInput
                 {
                     gamepadJump = Gamepad.current.startButton.wasPressedThisFrame;
                 }
-                return Input.GetKeyDown(KeyCode.Return) || gamepadJump;
+                return Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Return) || gamepadJump;
             }
             else
             {

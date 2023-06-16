@@ -199,7 +199,7 @@ public class GameController : MonoBehaviour
 
     public void PickedPoint()
     {
-        score.Value += 100;
+        score.Value += 50;
     }
 
     public void Finish()

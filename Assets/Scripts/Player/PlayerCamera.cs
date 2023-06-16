@@ -8,6 +8,8 @@ public class PlayerCamera : MonoBehaviour
     private CinemachineFreeLook cameraSetting;
     private IInput _input;
     [SerializeField] private GameObject player;
+    [SerializeField] private float senseX = 750;
+    [SerializeField] private float senseY = 5;
 
     private void Start()
     {
@@ -17,7 +19,7 @@ public class PlayerCamera : MonoBehaviour
 
     private void Update()
     {
-        cameraSetting.m_XAxis.Value += _input.look.y * PlayerPrefs.GetFloat("sensitivity") * 750 * Time.deltaTime;
-        cameraSetting.m_YAxis.Value += -_input.look.x * PlayerPrefs.GetFloat("sensitivity") * 5 * Time.deltaTime;
+        cameraSetting.m_XAxis.Value += _input.look.y * PlayerPrefs.GetFloat("sensitivity") * senseX * Time.deltaTime;
+        cameraSetting.m_YAxis.Value += -_input.look.x * PlayerPrefs.GetFloat("sensitivity") * senseY * Time.deltaTime;
     }
 }
