@@ -115,6 +115,13 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene("Game");
     }
 
+    public void BackToMenu()
+    {
+        Time.timeScale = 1;
+        cameFrom.Value = "";
+        SceneManager.LoadScene("Menu");
+    }
+
     private void Cheat()
     {
         if (Input.GetKeyDown(KeyCode.Y))

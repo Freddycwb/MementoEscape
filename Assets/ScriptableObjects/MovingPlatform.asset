@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: MovingPlatform
   m_EditorClassIdentifier: 
   platform: {fileID: 0}
-  lastRotation: 0
+  lastRotation: {x: 0, y: 0, z: 0}
   lastPosition: {x: 0, y: 0, z: 0}

@@ -18,9 +18,7 @@ public class PlayerInput : MonoBehaviour, IInput
             if (Gamepad.current != null)
             {
                 StickControl stick = Gamepad.current.leftStick;
-                // Debug.Log(stick.right.value + " " + stick.left.value + " " + stick.up.value + " " + stick.down.value);
                 gamepadMove = new Vector3(stick.right.value - stick.left.value, 0, stick.up.value - stick.down.value);
-                Debug.Log(gamepadMove);
                 if (gamepadMove.magnitude < 0.9f)
                 {
                     gamepadMove = Vector3.zero;

@@ -143,7 +143,7 @@ MonoBehaviour:
   timeToAction: 0
   timeToSubAction: 0
   instantiateOnAction:
-  - {fileID: 1442965535111787294, guid: 143334d922acb0343857a63672b74473, type: 3}
+  - {fileID: 1442965535111787294, guid: 52716815b6f5498489b36867607e213e, type: 3}
   - {fileID: 1882743717560799792, guid: e9728835a2d355949a1364544b84c62a, type: 3}
   instantiateOnSubAction: []
   destroyOnDisable: 1
