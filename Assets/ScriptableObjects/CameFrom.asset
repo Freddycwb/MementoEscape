@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: CameFrom
   m_EditorClassIdentifier: 
   DeveloperDescription: 
-  Value: MenuVictory
+  Value: 
   PersistBetweenScenes: 1
